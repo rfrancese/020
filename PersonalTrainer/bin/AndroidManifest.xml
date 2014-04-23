@@ -26,6 +26,14 @@
             android:name="it.unisa.personaltrainer.RegistrationActivity"
             android:label="@string/title_activity_registration" >
         </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.PrivacyActivity"
+            android:label="@string/title_activity_privacy" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.RiepilogoActivity"
+            android:label="@string/title_activity_riepilogo" >
+        </activity>
     </application>
 
 </manifest>

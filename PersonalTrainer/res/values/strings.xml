@@ -4,6 +4,31 @@
     <string name="app_name">PersonalTrainer</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="Titolo">PERSONAL TRAINER</string>
     <string name="hello_world">Hello world!</string>
+    <string name="nome_utente">Nome Utente</string>
+    <string name="sesso">Sesso</string>
+    <string name="femmina">F</string>
+    <string name="eta">Età</string>
+    <string name="polso">Circonferenza Polso</string>
+    <string name="maschio">M</string>
+    <string name="altezza">Altezza</string>
+    <string name="centimetro">cm</string>
+    <string name="kg">Kg</string>
+    <string name="peso">Peso</string>
+    <string name="avanti">Avanti</string>
+    <string name="prep">Preparazione Fisica</string>
+    <string name="spin">Scegli</string>
+
+    <string-array name="livelli">
+        <item>Principiante</item>
+        <item>Intermedio</item>
+        <item> Avanzato </item>
+    </string-array>
+
+    <string name="title_activity_privacy">PrivacyActivity</string>
+    <string name="privacy">Regolamento Privacy</string>
+    <string name="title_activity_riepilogo">RiepilogoActivity</string>
+    <string name="riep">Riepilogo situazione attuale</string>
 
 </resources>
