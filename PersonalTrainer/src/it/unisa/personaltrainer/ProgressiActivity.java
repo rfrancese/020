@@ -1,7 +1,7 @@
 package it.unisa.personaltrainer;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,14 +9,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
-public class PrivacyActivity extends ActionBarActivity {
+
+public class ProgressiActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_privacy);
+		setContentView(R.layout.activity_progressi);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -28,7 +28,7 @@ public class PrivacyActivity extends ActionBarActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.privacy, menu);
+		getMenuInflater().inflate(R.menu.progressi, menu);
 		return true;
 	}
 
@@ -44,6 +44,7 @@ public class PrivacyActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
@@ -55,10 +56,11 @@ public class PrivacyActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_privacy,
+			View rootView = inflater.inflate(R.layout.fragment_progressi,
 					container, false);
 			return rootView;
 		}
 	}
-
+	
+	
 }
