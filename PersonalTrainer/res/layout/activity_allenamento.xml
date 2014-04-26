@@ -4,32 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grigio"
-    tools:context="it.unisa.personaltrainer.ProgressiActivity"
+    tools:context="it.unisa.personaltrainer.AllenamentoActivity"
     tools:ignore="MergeRootFrame" >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="34dp"
-        android:layout_marginTop="52dp"
-        android:text="Condividi"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FF0000"
-        android:textSize="20sp"
-        android:textStyle="italic|bold" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="144dp"
-        android:text="Grafico progressi"
+        android:layout_marginTop="40dp"
+        android:text="Scegli un obiettivo"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/rosso" />
 
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp" />
+
 </RelativeLayout>
+

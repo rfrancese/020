@@ -18,10 +18,11 @@
     <string name="spin">Scegli</string>
     <string name="title_activity_avvio">AvvioActivity</string>
     <string name="title_activity_riepilogo">RiepilogoActivity</string>
+    <string name="scegli_gruppo">Seleziona un gruppo muscolare</string>
 
     <color name="rosso">#FF0000</color>
 
-    <string name="title_activity_progressi">ProgressiActivity</string>
+    <string name="title_activity_progress">ProgressiActivity</string>
 
     <color name="grigio">#F5F5F5</color>
 
@@ -34,7 +35,11 @@
     <string name="daAllenare">Prossimo gruppo muscolare da allenare:</string>
     <string name="reg">Registrazione</string>
     <string name="title_activity_setting">SettingActivity</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_diary">DiaryActivity</string>
+    <string name="title_activity_excercises">ExcercisesActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="dettagli">Dettagli Esercizio</string>
+    <string name="title_activity_allenamento">AllenamentoActivity</string>
+    
 
 </resources>

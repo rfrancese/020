@@ -1,38 +1,34 @@
 package it.unisa.personaltrainer;
 
-
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 
-
-
-
-
-public class AvvioActivity extends Activity {
+public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.activity_avvio);
+		setContentView(R.layout.activity_main);
 
 	}
 
 	protected void onRestart()
 	{
 	super.onRestart();
+
 	}
 	protected void onStart()
 	{
 	super.onStart();
+	@SuppressWarnings("unused")
 	CountDownTimer cdt = new CountDownTimer(3000,1000){
 		@Override
 		public void onFinish() {
 			finish();
-			Intent intent = new Intent(AvvioActivity.this,RegistrationActivity.class);
+			Intent intent = new Intent(MainActivity.this,RegistrationActivity.class);
 			startActivity(intent);
 		}
 
@@ -53,6 +49,7 @@ public class AvvioActivity extends Activity {
 
     protected void onPause(){
     	super.onPause();
+    	finish();
     }
     protected void onDestroy() {
     	super.onDestroy();
