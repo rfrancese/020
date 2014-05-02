@@ -15,7 +15,6 @@
     <string name="peso">Peso (Kg)</string>
     <string name="avanti">Avanti</string>
     <string name="prep">Preparazione Fisica</string>
-    <string name="spin">Scegli</string>
     <string name="title_activity_avvio">AvvioActivity</string>
     <string name="title_activity_riepilogo">RiepilogoActivity</string>
     <string name="scegli_gruppo">Seleziona un gruppo muscolare</string>
@@ -33,13 +32,21 @@
     <string name="data">Data ultimo allenamento:</string>
     <string name="allenato">Ultimo gruppo muscolare allenato:</string>
     <string name="daAllenare">Prossimo gruppo muscolare da allenare:</string>
-    <string name="reg">Registrazione</string>
+    <string name="reg">Registrazione Utente</string>
     <string name="title_activity_setting">SettingActivity</string>
     <string name="title_activity_diary">DiaryActivity</string>
     <string name="title_activity_excercises">ExcercisesActivity</string>
     <string name="title_activity_details">DetailsActivity</string>
     <string name="dettagli">Dettagli Esercizio</string>
     <string name="title_activity_allenamento">AllenamentoActivity</string>
+    <color name="black">#000000</color>
+   
+         
+    <string-array name="seleziona">
+        <item >Principiante</item>
+        <item >Intermedio</item>
+        <item >Avanzato</item>
+    </string-array>
     
-
+    
 </resources>

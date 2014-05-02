@@ -8,6 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="it.unisa.personaltrainer.MainActivity$PlaceholderFragment" >
 
- 
+
 
 </RelativeLayout>

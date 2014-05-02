@@ -2,7 +2,11 @@ package it.unisa.personaltrainer;
 
 import android.app.TabActivity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ScaleDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
@@ -19,8 +23,9 @@ public class RiepilogoActivity extends TabActivity {
 			 * SCHEDA 1
 			 */
 			 TabSpec spec1 = tabHost.newTabSpec("Scheda 1");
-			 spec1.setIndicator("Esercizi"); //2. Ho definito il mio oggetto TabSpec
-			  
+			 spec1.setIndicator("", getResources().getDrawable(R.drawable.tab1_selector)); //2. Ho definito il mio oggetto TabSpec
+			
+			     
 			 //3. definisco l'intent che punta all'Activity1
 			 Intent intent1 = new Intent(this, ExcercisesActivity.class);
 			  
@@ -35,7 +40,7 @@ public class RiepilogoActivity extends TabActivity {
 			 */
 			 //SCHEDA 2
 			 TabSpec spec2 = tabHost.newTabSpec("Scheda 2");
-			 spec2.setIndicator("Diario"); //2. Ho definito il mio oggetto TabSpec
+			 spec2.setIndicator("", getResources().getDrawable(R.drawable.tab2_selector)); //2. Ho definito il mio oggetto TabSpec
 			  
 			 //3. definisco l'intent che punta all'Activity1
 			 Intent intent2 = new Intent(this, DiaryActivity.class);
@@ -48,7 +53,7 @@ public class RiepilogoActivity extends TabActivity {
 			  
 			 //SCHEDA 3
 			 TabSpec spec3 = tabHost.newTabSpec("Scheda 3");
-			 spec3.setIndicator("Progressi"); //2. Ho definito il mio oggetto TabSpec
+			 spec3.setIndicator("", getResources().getDrawable(R.drawable.tab3_selector)); //2. Ho definito il mio oggetto TabSpec
 			  
 			 //3. definisco l'intent che punta all'Activity3
 			 Intent intent3 = new Intent(this, ProgressActivity.class);
@@ -61,7 +66,7 @@ public class RiepilogoActivity extends TabActivity {
 			 
 			 //SCHEDA 4
 			 TabSpec spec4 = tabHost.newTabSpec("Scheda 4");
-			 spec4.setIndicator("Allenamento"); //2. Ho definito il mio oggetto TabSpec
+			 spec4.setIndicator("", getResources().getDrawable(R.drawable.tab4_selector)); //2. Ho definito il mio oggetto TabSpec
 			  
 			 //3. definisco l'intent che punta all'Activity3
 			 Intent intent4 = new Intent(this, AllenamentoActivity.class);
@@ -74,16 +79,19 @@ public class RiepilogoActivity extends TabActivity {
 			 
 			 //SCHEDA 5
 			 TabSpec spec5 = tabHost.newTabSpec("Scheda 5");
-			 spec5.setIndicator("Progressi"); //2. Ho definito il mio oggetto TabSpec
+			 spec5.setIndicator("", getResources().getDrawable(R.drawable.tab5_selector)); //2. Ho definito il mio oggetto TabSpec
 			  
 			 //3. definisco l'intent che punta all'Activity3
-			 Intent intent5 = new Intent(this, ProgressActivity.class);
+			 Intent intent5 = new Intent(this, SettingsActivity.class);
 			  
 			 //4. collego l'Intent appena creato con l'oggetto TabSpec
 			 spec5.setContent(intent5);
 			  
 			 //5. aggiungo la scheda al'oggetto TabHost
 			 tabHost.addTab(spec5);
+			 
+			
+			 
 	}	
 		
 	protected void onStart()
