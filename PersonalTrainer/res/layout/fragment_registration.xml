@@ -1,0 +1,12 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dip"
+    android:layout_marginTop="63dip"
+  
+    android:cacheColorHint="@color/grigio"
+    android:divider="@color/rosso"
+    
+    android:entries="@array/seleziona"/>
+

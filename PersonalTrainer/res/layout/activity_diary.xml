@@ -3,42 +3,32 @@
     android:id="@+id/container"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@color/grigio"
     tools:context="it.unisa.personaltrainer.DiaryActivity"
     tools:ignore="MergeRootFrame" >
-
-<RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="159dp" >
-    </RelativeLayout>
-
-    <CalendarView
-        android:id="@+id/calendarView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/relativeLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
-        android:text="Seleziona giorno per visualizzare informazioni sulla sessione svolta"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/giorno"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/calendarView1"
-        android:layout_centerHorizontal="true"
-        android:text="Oggi" />
+    <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/grigio" />
 
 </RelativeLayout>

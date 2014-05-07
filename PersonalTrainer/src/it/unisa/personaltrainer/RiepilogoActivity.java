@@ -2,18 +2,13 @@ package it.unisa.personaltrainer;
 
 import android.app.TabActivity;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.ScaleDrawable;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 
 @SuppressWarnings("deprecation")
 public class RiepilogoActivity extends TabActivity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,7 +19,8 @@ public class RiepilogoActivity extends TabActivity {
 			 */
 			 TabSpec spec1 = tabHost.newTabSpec("Scheda 1");
 			 spec1.setIndicator("", getResources().getDrawable(R.drawable.tab1_selector)); //2. Ho definito il mio oggetto TabSpec
-			
+			 
+			 
 			     
 			 //3. definisco l'intent che punta all'Activity1
 			 Intent intent1 = new Intent(this, ExcercisesActivity.class);
@@ -89,10 +85,8 @@ public class RiepilogoActivity extends TabActivity {
 			  
 			 //5. aggiungo la scheda al'oggetto TabHost
 			 tabHost.addTab(spec5);
+	}
 			 
-			
-			 
-	}	
 		
 	protected void onStart()
 	{

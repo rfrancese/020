@@ -34,7 +34,7 @@ public class RegistrationActivity extends Activity {
 		
 		final Spinner s = (Spinner) findViewById(R.id.spinner1);
 		  ArrayAdapter adapter = ArrayAdapter.createFromResource(
-		  this, R.array.seleziona, android.R.layout.simple_spinner_dropdown_item);
+		  this, R.array.seleziona, android.R.layout.simple_spinner_item);
 		  adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 				s.setAdapter(
 					      new NothingSelectedSpinnerAdapter(

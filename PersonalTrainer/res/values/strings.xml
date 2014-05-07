@@ -18,9 +18,9 @@
     <string name="title_activity_avvio">AvvioActivity</string>
     <string name="title_activity_riepilogo">RiepilogoActivity</string>
     <string name="scegli_gruppo">Seleziona un gruppo muscolare</string>
-
+   <string name="testo"> Scrivi del testo qui..</string>
     <color name="rosso">#FF0000</color>
-
+    <color name="darkRed">#CC0000</color>
     <string name="title_activity_progress">ProgressiActivity</string>
 
     <color name="grigio">#F5F5F5</color>
@@ -39,14 +39,33 @@
     <string name="title_activity_details">DetailsActivity</string>
     <string name="dettagli">Dettagli Esercizio</string>
     <string name="title_activity_allenamento">AllenamentoActivity</string>
+
     <color name="black">#000000</color>
-   
-         
+
     <string-array name="seleziona">
-        <item >Principiante</item>
-        <item >Intermedio</item>
-        <item >Avanzato</item>
+        <item>Principiante</item>
+        <item>Intermedio</item>
+        <item>Avanzato</item>
     </string-array>
-    
-    
+    <string-array name="lingua">
+        <item>Italiano</item>
+        <item>Inglese</item>
+    </string-array>
+
+    <string name="generali">Generali</string>
+    <string name="aiuto">Aiuto</string>
+    <string name="lingua">Lingua</string>
+    <string name="standby">No Standby in allenamento</string>
+    <string name="facebook">Pagina Facebook</string>
+    <string name="versione">Versione Applicazione</string>
+    <string name="problema">Segnala un problema</string>
+    <string name="ripristino">Ripristino da Backup</string>
+    <string name="invia">Invia</string>
+    <string name="annulla">&lt;annulla</string>
+
+    <string name="title_activity_problem">ProblemActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="giorno">Seleziona un giorno per visualizzare gli esercizi svolti</string>
+    <color name="silver">#C0C0C0</color>
+
 </resources>
