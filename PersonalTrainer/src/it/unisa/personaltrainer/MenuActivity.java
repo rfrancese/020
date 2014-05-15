@@ -8,18 +8,20 @@ import android.widget.TabHost.TabSpec;
 
 
 @SuppressWarnings("deprecation")
-public class RiepilogoActivity extends TabActivity {
+public class MenuActivity extends TabActivity {
+	private TabHost tabHost;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 	
-			 TabHost tabHost = getTabHost();
+		// recupero il tabHost
+			  tabHost = getTabHost();
 			 /*
 			 * SCHEDA 1
 			 */
-			 TabSpec spec1 = tabHost.newTabSpec("Scheda 1");
+		      TabSpec spec1 = tabHost.newTabSpec("Scheda 1");
 			 spec1.setIndicator("", getResources().getDrawable(R.drawable.tab1_selector)); //2. Ho definito il mio oggetto TabSpec
-			 
+			
 			 
 			     
 			 //3. definisco l'intent che punta all'Activity1
@@ -35,9 +37,9 @@ public class RiepilogoActivity extends TabActivity {
 			 * Riperto i punti 2,3,4,5 per le restanti schede 
 			 */
 			 //SCHEDA 2
-			 TabSpec spec2 = tabHost.newTabSpec("Scheda 2");
+		  TabSpec spec2 = tabHost.newTabSpec("Scheda 2");
 			 spec2.setIndicator("", getResources().getDrawable(R.drawable.tab2_selector)); //2. Ho definito il mio oggetto TabSpec
-			  
+			
 			 //3. definisco l'intent che punta all'Activity1
 			 Intent intent2 = new Intent(this, DiaryActivity.class);
 			  
@@ -50,7 +52,7 @@ public class RiepilogoActivity extends TabActivity {
 			 //SCHEDA 3
 			 TabSpec spec3 = tabHost.newTabSpec("Scheda 3");
 			 spec3.setIndicator("", getResources().getDrawable(R.drawable.tab3_selector)); //2. Ho definito il mio oggetto TabSpec
-			  
+			 
 			 //3. definisco l'intent che punta all'Activity3
 			 Intent intent3 = new Intent(this, ProgressActivity.class);
 			  
@@ -63,7 +65,7 @@ public class RiepilogoActivity extends TabActivity {
 			 //SCHEDA 4
 			 TabSpec spec4 = tabHost.newTabSpec("Scheda 4");
 			 spec4.setIndicator("", getResources().getDrawable(R.drawable.tab4_selector)); //2. Ho definito il mio oggetto TabSpec
-			  
+			
 			 //3. definisco l'intent che punta all'Activity3
 			 Intent intent4 = new Intent(this, AllenamentoActivity.class);
 			  
@@ -85,8 +87,12 @@ public class RiepilogoActivity extends TabActivity {
 			  
 			 //5. aggiungo la scheda al'oggetto TabHost
 			 tabHost.addTab(spec5);
-	}
+	
 			 
+		        
+			 
+	} 
+	
 		
 	protected void onStart()
 	{
@@ -117,5 +123,6 @@ public class RiepilogoActivity extends TabActivity {
     	super.onDestroy();
     	
     	}
+
 
 }

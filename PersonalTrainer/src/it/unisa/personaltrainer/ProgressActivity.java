@@ -17,7 +17,7 @@ public class ProgressActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		 setContentView(R.layout.activity_progress);
-		GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {  
+		/*GraphViewSeries exampleSeries = new GraphViewSeries(new GraphViewData[] {  
       	      new GraphViewData(1, 40)  
       	      , new GraphViewData(2, 12)  
       	      , new GraphViewData(3, 7)
@@ -34,8 +34,36 @@ public class ProgressActivity extends Activity {
       	);  
       	graphView.addSeries(exampleSeries); // data  
       	LinearLayout layout = (LinearLayout) findViewById(R.id.LinearLayout1);  
-      	layout.addView(graphView);  
+      	layout.addView(graphView);  */
 		
 	}
+	
+	
+	protected void onStart()
+	{
+	super.onStart();
+	
+	}
+	
+	protected void onRestart()
+	{
+	super.onRestart();
 
+	}
+	protected void onResume() {
+		super.onResume();
+		
+	}
+	protected void onStop() {
+		super.onStop();
+	}
+	
+
+    protected void onPause(){
+    	super.onPause();
+    }
+    protected void onDestroy() {
+    	super.onDestroy();
+    	
+    	}
 }

@@ -1,4 +1,4 @@
-package it.unisa.personaltrainer;
+package accessori;
 
 import com.jjoe64.graphview.GraphViewDataInterface;
 

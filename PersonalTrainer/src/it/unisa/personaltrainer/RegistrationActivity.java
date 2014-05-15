@@ -22,25 +22,28 @@ public class RegistrationActivity extends Activity {
 		
 		setContentView(R.layout.activity_registration);
 		
+		//gestione del button avanti
 		Button btn1 = (Button) findViewById(R.id.button1);
 		btn1.setOnClickListener(new OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
-			Intent intent = new Intent(RegistrationActivity.this,RiepilogoActivity.class);
+			//vado alla prossima activity
+			Intent intent = new Intent(RegistrationActivity.this,MenuActivity.class);
 	       startActivity(intent);
 		}
 		});
 		
-		
+		// gestione dello spinner
 		final Spinner s = (Spinner) findViewById(R.id.spinner1);
+		//inserimento array di stringhe nello spinner
 		  ArrayAdapter adapter = ArrayAdapter.createFromResource(
 		  this, R.array.seleziona, android.R.layout.simple_spinner_item);
 		  adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 				s.setAdapter(
+						// classe creata per settare la parte grafica dello spinner
 					      new NothingSelectedSpinnerAdapter(
 					            adapter,
 					            R.drawable.contact_spinner_row_nothing_selected,
-					            // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
 					            this));
 				s.setPrompt("Seleziona");
 		
@@ -50,7 +53,7 @@ public class RegistrationActivity extends Activity {
 		s.setOnItemSelectedListener(new OnItemSelectedListener() {
 		
 		public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-			
+			//recupero la voce selezionata 
 			String voceSelezionata = (String) s.getSelectedItem();
 		
 		}

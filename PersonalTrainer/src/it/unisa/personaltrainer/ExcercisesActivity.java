@@ -3,13 +3,18 @@ package it.unisa.personaltrainer;
 import accessori.Muscles;
 import accessori.MusclesAdapter;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 
 public class ExcercisesActivity extends Activity {
+	
 	private ListView listView1;
+	
 	  protected void onCreate(Bundle savedInstanceState) {
 	      super.onCreate(savedInstanceState);
 
@@ -17,11 +22,13 @@ public class ExcercisesActivity extends Activity {
 	      
 	      Muscles data[] = new Muscles[]
 	    		  {
-	    		  new Muscles(R.drawable.image1, "Pettorali"),
-	    		  /*new Muscles(R.drawable.weather_showers, "Showers"),
-	    		  new Weather(R.drawable.weather_snow, "Snow"),
-	    		  new Weather(R.drawable.weather_storm, "Storm"),
-	    		  new Weather(R.drawable.weather_sunny, "Sunny")*/
+	    		  new Muscles(R.drawable.pettorali, "Pettorali"),
+	    		  new Muscles(R.drawable.addominali, "Addominali"),
+	    		  new Muscles(R.drawable.deltoidi, "Deltoidi"),
+	    		  new Muscles(R.drawable.bicipiti, "Bicipiti"),
+	    		  new Muscles(R.drawable.tricipiti, "Tricipiti"),
+	    		  new Muscles(R.drawable.dorsali, "Dorsali"),
+	    		  new Muscles(R.drawable.gambe, "Gambe"), 
 	    		  };
 	    		   
 	    		  MusclesAdapter adapter = new MusclesAdapter(this,
@@ -34,7 +41,97 @@ public class ExcercisesActivity extends Activity {
 	    		  listView1.addHeaderView(header);
 	    		   
 	    		  listView1.setAdapter(adapter);
+	    		  listView1.setOnItemClickListener(new OnItemClickListener() {
+	    		        public void onItemClick(AdapterView<?> parent, View view,
+	    		            int position, long id) {
+	    		        	
+	    		        	  switch( position ) {
+	    		        	     case 1:  
+	    		        	    	      Intent newActivity1 = new Intent(view.getContext(), PectoralActivity.class);     
+				                          startActivity(newActivity1);
+				                          break;
+	    					     case 2:  
+	    					    	      Intent newActivity2 = new Intent(view.getContext(), AbdominalActivity.class);     
+	    					              startActivity(newActivity2);
+	    					              break;
+	    					  
+	    					     case 3:  Intent newActivity3 = new Intent(view.getContext(), DeltoidiActivity.class);     
+	    					              startActivity(newActivity3);
+	    					              break;
+	    					     /*case 3:  Intent newActivity4 = new Intent(this, i4.class);     
+	    					              startActivity(newActivity);
+	    					              break;*/
+	    					     case 7:  
+	    					    	      Intent newActivity5 = new Intent(view.getContext(), GambeActivity.class);     
+	    					              startActivity(newActivity5);
+	    					              break;
+	    					    	
+	    						    	 
+	    					    }
+	    		     /*     // When clicked, show a toast with the TextView text
+	    		             Intent myIntent = new Intent(view.getContext(), Html_file.class);
+	    		             startActivityForResult(myIntent, 0);*/
+
+	    		        }
+	    		});
+	    		  
+	    		  
+	    		  
 	    		  }
+	  /*
+	  public void onItemClick(AdapterView<?> parent, View view,
+			  int position, long id) {
+			   switch( position ) {
+			     case 0:  Intent newActivity1 = new Intent(this, i1.class);     
+			              startActivity(newActivity);
+			              break;
+			     case 1:  Intent newActivity2 = new Intent(this, i2.class);     
+			              startActivity(newActivity);
+			              break;
+			     case 2:  Intent newActivity3 = new Intent(this, i3.class);     
+			              startActivity(newActivity);
+			              break;
+			     case 3:  Intent newActivity4 = new Intent(this, i4.class);     
+			              startActivity(newActivity);
+			              break;
+			     case 6:  Intent newActivity5 = new Intent(this, GambeActivity.class);     
+			              startActivity(newActivity5);
+			              break;
+			    }
+			}       */
+	  
+		
+		
+		protected void onStart()
+		{
+		super.onStart();
+		
+		}
+		
+		protected void onRestart()
+		{
+		super.onRestart();
+
+		}
+		protected void onResume() {
+			super.onResume();
+			
+		}
+		protected void onStop() {
+			super.onStop();
+
+		}
+		
+
+	    protected void onPause(){
+	    	super.onPause();
+	    }
+	   
+	    protected void onDestroy() {
+	    	super.onDestroy();
+	    	
+	    	
+	    	}
 	  }
 
 

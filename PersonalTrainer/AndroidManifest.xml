@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.RiepilogoActivity"
+            android:name="it.unisa.personaltrainer.MenuActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
@@ -59,7 +59,28 @@
         </activity>
         <activity
             android:name="it.unisa.personaltrainer.ProblemActivity"
-            android:label="@string/title_activity_problem" >
+            android:label="@string/title_activity_problem"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.GambeActivity"
+            android:label="@string/title_activity_gambe"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.AbdominalActivity"
+            android:label="@string/title_activity_abdominal" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.PectoralActivity"
+            android:label="@string/title_activity_pectoral" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.DeltoidiActivity"
+            android:label="@string/title_activity_deltoidi" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
     </application>
 

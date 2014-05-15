@@ -17,10 +17,15 @@
     <string name="prep">Preparazione Fisica</string>
     <string name="title_activity_avvio">AvvioActivity</string>
     <string name="title_activity_riepilogo">RiepilogoActivity</string>
+    <string name="title_activity_pectoral">PectoralActivity</string>
+    
     <string name="scegli_gruppo">Seleziona un gruppo muscolare</string>
-   <string name="testo"> Scrivi del testo qui..</string>
+    <string name="testo"> Scrivi il tuo problema qui..</string>
+    <string name="indietro">&lt;indietro</string>
+
+    <color name="blue">#33b5e5</color>
     <color name="rosso">#FF0000</color>
-    <color name="darkRed">#CC0000</color>
+
     <string name="title_activity_progress">ProgressiActivity</string>
 
     <color name="grigio">#F5F5F5</color>
@@ -49,7 +54,7 @@
     </string-array>
     <string-array name="lingua">
         <item>Italiano</item>
-        <item>Inglese</item>
+        <item>English</item>
     </string-array>
 
     <string name="generali">Generali</string>
@@ -62,10 +67,13 @@
     <string name="ripristino">Ripristino da Backup</string>
     <string name="invia">Invia</string>
     <string name="annulla">&lt;annulla</string>
-
     <string name="title_activity_problem">ProblemActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="giorno">Seleziona un giorno per visualizzare gli esercizi svolti</string>
+    <string name="allen">Sei pronto per il tuo primo allenamento? Seleziona un obiettivo</string>  
     <color name="silver">#C0C0C0</color>
+    <string name="title_activity_deltoidi">DeltoidiActivity</string>
+    <string name="title_activity_gambe">GambeActivity</string>
+    <string name="title_activity_abdominal">AbdominalActivity</string>
 
 </resources>
