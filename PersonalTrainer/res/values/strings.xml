@@ -18,7 +18,7 @@
     <string name="title_activity_avvio">AvvioActivity</string>
     <string name="title_activity_riepilogo">RiepilogoActivity</string>
     <string name="title_activity_pectoral">PectoralActivity</string>
-    
+    <string name="diet">Segui i nostri consigli alimentari</string>
     <string name="scegli_gruppo">Seleziona un gruppo muscolare</string>
     <string name="testo"> Scrivi il tuo problema qui..</string>
     <string name="indietro">&lt;indietro</string>
@@ -44,7 +44,10 @@
     <string name="title_activity_details">DetailsActivity</string>
     <string name="dettagli">Dettagli Esercizio</string>
     <string name="title_activity_allenamento">AllenamentoActivity</string>
-
+    <string name="title_activity_bicipiti">BicipitiActivity</string>
+    <string name="title_activity_triceps">TricepsActivity</string>
+    <string name="register">Inserisci i tuoi dati personali</string>
+    <string name="prosegui">Prosegui</string>
     <color name="black">#000000</color>
 
     <string-array name="seleziona">
@@ -70,10 +73,14 @@
     <string name="title_activity_problem">ProblemActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="giorno">Seleziona un giorno per visualizzare gli esercizi svolti</string>
-    <string name="allen">Sei pronto per il tuo primo allenamento? Seleziona un obiettivo</string>  
+    <string name="allen">Sei pronto per il tuo primo allenamento? Seleziona un obiettivo</string>
+
     <color name="silver">#C0C0C0</color>
+
     <string name="title_activity_deltoidi">DeltoidiActivity</string>
     <string name="title_activity_gambe">GambeActivity</string>
     <string name="title_activity_abdominal">AbdominalActivity</string>
+    <string name="title_activity_dorsali">DorsaliActivity</string>
+    <string name="title_activity_dieta_r">DietaRActivity</string>
 
 </resources>

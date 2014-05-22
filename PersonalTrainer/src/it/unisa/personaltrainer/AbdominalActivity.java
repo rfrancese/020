@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 
 
+
 public class AbdominalActivity extends Activity {
 
 	private ListView listView1;
@@ -18,7 +19,6 @@ public class AbdominalActivity extends Activity {
 	      super.onCreate(savedInstanceState);
 
 	      setContentView(R.layout.activity_excercises);
-	      
 	      Muscles data[] = new Muscles[]
 	    		  {
 	    		  new Muscles(R.drawable.a, "Bent Knee Hip Raise"),

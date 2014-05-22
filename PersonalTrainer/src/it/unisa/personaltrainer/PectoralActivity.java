@@ -19,8 +19,8 @@ public class PectoralActivity extends Activity {
 	      Muscles data[] = new Muscles[]
 	    		  {
 	    		  new Muscles(R.drawable.i, "Croci ai cavi"),
-	    		  new Muscles(R.drawable.j, "Croci alla macchina"),
-	    		  new Muscles(R.drawable.k, "Croci con manubri su panca inclinata "),
+	    		  new Muscles(R.drawable.j, "Croci con manubri su panca inclinata"),
+	    		  new Muscles(R.drawable.k, "Croci alla macchina "),
 	    		  new Muscles(R.drawable.l, "Croci con manubri su panca piana"),
 	    		  new Muscles(R.drawable.m, "Panca al multipowe"),
 	    		  new Muscles(R.drawable.n, "Panca declinata"),

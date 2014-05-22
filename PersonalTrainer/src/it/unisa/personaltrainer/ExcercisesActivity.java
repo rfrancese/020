@@ -58,49 +58,34 @@ public class ExcercisesActivity extends Activity {
 	    					     case 3:  Intent newActivity3 = new Intent(view.getContext(), DeltoidiActivity.class);     
 	    					              startActivity(newActivity3);
 	    					              break;
-	    					     /*case 3:  Intent newActivity4 = new Intent(this, i4.class);     
-	    					              startActivity(newActivity);
-	    					              break;*/
+	    					     
+	    					     case 4:  Intent newActivity4 = new Intent(view.getContext(), BicipitiActivity.class);     
+	    					              startActivity(newActivity4);
+	    					              break;
+	    					     case 5:  
+	    					    	      Intent newActivity5 = new Intent(view.getContext(), TricepsActivity.class);     
+					                      startActivity(newActivity5);
+					                      break;
+					              
+	    					     case 6:  
+   					    	              Intent newActivity6 = new Intent(view.getContext(), DorsaliActivity.class);     
+				                          startActivity(newActivity6);
+				                          break;
 	    					     case 7:  
-	    					    	      Intent newActivity5 = new Intent(view.getContext(), GambeActivity.class);     
-	    					              startActivity(newActivity5);
+	    					    	      Intent newActivity7 = new Intent(view.getContext(), GambeActivity.class);     
+	    					              startActivity(newActivity7);
 	    					              break;
 	    					    	
 	    						    	 
 	    					    }
-	    		     /*     // When clicked, show a toast with the TextView text
-	    		             Intent myIntent = new Intent(view.getContext(), Html_file.class);
-	    		             startActivityForResult(myIntent, 0);*/
-
+	    		    
 	    		        }
 	    		});
 	    		  
 	    		  
-	    		  
-	    		  }
-	  /*
-	  public void onItemClick(AdapterView<?> parent, View view,
-			  int position, long id) {
-			   switch( position ) {
-			     case 0:  Intent newActivity1 = new Intent(this, i1.class);     
-			              startActivity(newActivity);
-			              break;
-			     case 1:  Intent newActivity2 = new Intent(this, i2.class);     
-			              startActivity(newActivity);
-			              break;
-			     case 2:  Intent newActivity3 = new Intent(this, i3.class);     
-			              startActivity(newActivity);
-			              break;
-			     case 3:  Intent newActivity4 = new Intent(this, i4.class);     
-			              startActivity(newActivity);
-			              break;
-			     case 6:  Intent newActivity5 = new Intent(this, GambeActivity.class);     
-			              startActivity(newActivity5);
-			              break;
-			    }
-			}       */
-	  
-		
+	    	 
+	 	  }
+	
 		
 		protected void onStart()
 		{

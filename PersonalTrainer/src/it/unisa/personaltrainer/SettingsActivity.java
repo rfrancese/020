@@ -48,7 +48,7 @@ public class SettingsActivity extends Activity {
 
 		  @Override
 		  public void onClick(View v) {
-			  Toast.makeText(getApplicationContext(), "Versione Corrente: 1.0", Toast.LENGTH_SHORT).show();
+			  Toast.makeText(getApplicationContext(), "Versione Corrente: 1.3", Toast.LENGTH_SHORT).show();
 		  }
 
 		});

@@ -8,20 +8,23 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        >
         <activity
             android:name="it.unisa.personaltrainer.RegistrationActivity"
             android:label="@string/title_activity_registration"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="it.unisa.personaltrainer.MainActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,10 +34,10 @@
         <activity
             android:name="it.unisa.personaltrainer.MenuActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.ProgressActivity"
+            android:name="it.unisa.personaltrainer.DietActivity"
             android:label="@string/title_activity_progress" >
         </activity>
         <activity
@@ -60,27 +63,47 @@
         <activity
             android:name="it.unisa.personaltrainer.ProblemActivity"
             android:label="@string/title_activity_problem"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="it.unisa.personaltrainer.GambeActivity"
             android:label="@string/title_activity_gambe"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="it.unisa.personaltrainer.AbdominalActivity"
-            android:label="@string/title_activity_abdominal" 
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            android:label="@string/title_activity_abdominal"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="it.unisa.personaltrainer.PectoralActivity"
-            android:label="@string/title_activity_pectoral" 
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            android:label="@string/title_activity_pectoral"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="it.unisa.personaltrainer.DeltoidiActivity"
-            android:label="@string/title_activity_deltoidi" 
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            android:label="@string/title_activity_deltoidi"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.BicipitiActivity"
+            android:label="@string/title_activity_bicipiti"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.TricepsActivity"
+            android:label="@string/title_activity_triceps"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.DorsaliActivity"
+            android:label="@string/title_activity_dorsali"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personaltrainer.DietaRActivity"
+            android:label="@string/title_activity_dieta_r" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
         </activity>
     </application>
 
