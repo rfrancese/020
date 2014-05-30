@@ -11,9 +11,8 @@ import android.widget.Button;
 import android.widget.ListView;
 
 
-
 public class DietActivity extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -39,19 +38,19 @@ public class DietActivity extends Activity {
 	    		  listView1.setAdapter(adapter);
 		
 	    		  Button btn1 = (Button) findViewById(R.id.button1);
-	    			btn1.setOnClickListener(new OnClickListener() {
+	    			/*btn1.setOnClickListener(new OnClickListener() {
 	    			@Override
-	    			public void onClick(View arg0) {
+	    			/*public void onClick(View arg0) {
 	    				//vado alla prossima activity
-	    				Intent intent = new Intent(DietActivity.this,DietaRActivity.class);
+	    				Intent intent = new Intent(DietActivity.this,DieteConsActivity.class);
 	    		       startActivity(intent);
 	    			}
 	    			});
-	    		  
+	    			
+*/
+	    			
 	    		}
 
-	    		
-	
 	
 	
 	

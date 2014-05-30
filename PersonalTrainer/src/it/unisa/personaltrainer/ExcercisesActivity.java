@@ -1,17 +1,20 @@
 package it.unisa.personaltrainer;
 
+import dorsali.DorsaliActivity;
 import accessori.Muscles;
 import accessori.MusclesAdapter;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
-public class ExcercisesActivity extends Activity {
+public class ExcercisesActivity extends Activity{
 	
 	private ListView listView1;
 	
@@ -20,6 +23,8 @@ public class ExcercisesActivity extends Activity {
 
 	      setContentView(R.layout.activity_excercises);
 	      
+	      TextView text= (TextView)findViewById(R.id.txtHeader1);
+	      text.setBackgroundColor(Color.WHITE);
 	      Muscles data[] = new Muscles[]
 	    		  {
 	    		  new Muscles(R.drawable.pettorali, "Pettorali"),
@@ -117,6 +122,9 @@ public class ExcercisesActivity extends Activity {
 	    	
 	    	
 	    	}
+
+
+
 	  }
 
 

@@ -48,6 +48,8 @@
     <string name="title_activity_triceps">TricepsActivity</string>
     <string name="register">Inserisci i tuoi dati personali</string>
     <string name="prosegui">Prosegui</string>
+    <string name="tab1">Esecuzione</string>
+    <string  name="tab2">Descrizione</string>
     <color name="black">#000000</color>
 
     <string-array name="seleziona">
@@ -82,5 +84,15 @@
     <string name="title_activity_abdominal">AbdominalActivity</string>
     <string name="title_activity_dorsali">DorsaliActivity</string>
     <string name="title_activity_dieta_r">DietaRActivity</string>
+    <string name="title_activity_lat_machine">Lat_machineActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_dietooo">DietoooActivity</string>
+    <string name="title_section1">Descrizione</string>
+    <string name="title_section2">Esecuzione</string>
+    <string name="title_activity_lat_machine2">Lat_machine2Activity</string>
+    <string name="title_activity_men">MenActivity</string>
+    <string name="title_activity_description_fragment">DescriptionFragment</string>
+    <string name="title_activity_video_fragment">VideoFragment</string>
+    <string name="title_activity_video_lat">VideoLatActivity</string>
 
 </resources>

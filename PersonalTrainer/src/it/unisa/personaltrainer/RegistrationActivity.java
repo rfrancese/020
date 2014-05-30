@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 
 
 
+
 import accessori.Muscles;
 import accessori.MusclesAdapter;
 import accessori.Utente;
@@ -14,6 +15,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -139,32 +141,33 @@ public class RegistrationActivity extends Activity {
 				+"accuratamente preparato prima di eseguire gli esercizi e non esagerare con i pesi. Aumenta gradualmente i pesi di un paio di chili a settimana."
 				+ " Non siamo responsabili di eventuali incidenti o infortuni dovuti al tuo allenamento. ";
 
-		AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_HOLO_LIGHT);
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Condizioni di utilizzo")
 		.setIcon( R.drawable.ic_launcher )
 		.setMessage(condizioni)
 		
 		.setCancelable(false)
-		.setNegativeButton("Rifiuta", new DialogInterface.OnClickListener() {
-		@Override
-		public void onClick(DialogInterface dialog, int which) {
-		finish();
-		}
-		})
+		
 		.setPositiveButton("Accetta", new DialogInterface.OnClickListener() {
 		@Override
 		public void onClick(DialogInterface dialog, int which) {
 		
 		}
-		});
+		})
 		
+		.setNegativeButton("Rifiuta", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+			finish();
+			}
+			});
 		AlertDialog alert = builder.create();
 		alert.show();
 		}
 	public void visualizza2() {
 		String condizioni="Sei sicuro di aver inserito tutti i dati in modo veritiero?";
 
-		AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_HOLO_LIGHT);
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Conferma i dati inseriti")
 		.setIcon( R.drawable.ic_launcher )
 		.setMessage(condizioni)
@@ -206,7 +209,7 @@ public class RegistrationActivity extends Activity {
 	public boolean salvaFileSD() {
 		try {
 	    //crea path di salvataggio
-		File directory=new File("/sdcard/PersonalTrainer/");
+		File directory=new File(Environment.getExternalStorageDirectory()+"/PersonalTrainer/");
 		    directory.mkdirs();
 		
 		File f = new File(directory,FILENAME);

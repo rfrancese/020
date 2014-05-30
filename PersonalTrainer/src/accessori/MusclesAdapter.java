@@ -3,6 +3,7 @@ package accessori;
 import it.unisa.personaltrainer.R;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +37,6 @@ public class MusclesAdapter extends ArrayAdapter<Muscles>{
 			holder = new MusclesHolder();
 			holder.imgIcon = (ImageView)row.findViewById(R.id.imgIcon);
 			holder.txtTitle = (TextView)row.findViewById(R.id.txtTitle);
-
 			row.setTag(holder);
 		}
 		else
@@ -46,6 +46,8 @@ public class MusclesAdapter extends ArrayAdapter<Muscles>{
 
 		Muscles m = data[position];
 		holder.txtTitle.setText(m.title);
+		holder.txtTitle.setTextSize(24);
+		holder.txtTitle.setTextColor(Color.WHITE);
 		holder.imgIcon.setImageResource(m.icon);
 
 		return row;

@@ -3,67 +3,49 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-<LinearLayout 
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E0FFFF"
-    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="881dp"
+        android:background="@color/blue"
+        android:orientation="vertical" >
 
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#E0FFFF"
-        android:divider="@color/blue"
-        android:dividerHeight="2dp" >
-    </ListView>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:src="@drawable/piramide" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="10dp" >
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView1"
-            android:layout_alignBottom="@+id/textView1"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@+id/textView2"
-            android:text="2500"
-            android:textColor="@color/rosso"
-            android:textStyle="italic|bold" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="14dp"
-            android:text="Il tuo fabbisogno giornaliero è di"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/black"
-            android:textStyle="italic|bold" />
-        
-        <TextView
-            android:id="@+id/textV"
-            android:layout_width="wrap_content"
-            android:layout_height="325dp"
-            android:layout_alignLeft="@+id/textView1"
-            android:layout_below="@+id/textView1"
-            android:layout_marginRight="7dp"
-            android:layout_marginTop="10dp"
-            android:text="Per ottenere una buona forma fisica non basta solo allenarsi, 
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="#E0FFFF" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/tabella" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="24dp"
+                android:text="Per ottenere una buona forma fisica non basta solo allenarsi, 
 il giusto rapporto di calorie e di tutte le sostanze utili per il 
 nostro organismo si rivela infatti fondamentale per ottimizzare i 
 risultati. Per questo motivo vogliamo consigliarti una dieta da
@@ -72,37 +54,93 @@ E&apos; fondamentale sottolineare che non esistono diete preconfezionate
 che vadano bene per tutte le persone, ma è invece fondamentale farsi 
 consigliare da esperti in base alle proprie esigenze. Fatta questa 
 importante premessa, premi il pulsante &apos;Prosegui&apos; per visualizzare i nostri consigli alimentari."
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:textStyle="italic" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="44dp"
+                android:text="Button" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/textView1"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="2dp"
-                android:layout_marginRight="12dp"
-                android:text="Kcal"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginTop="21dp"
+                android:text="Il tuo indice di massa corporea:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/black"
                 android:textStyle="italic|bold" />
 
-            <Button
-                android:id="@+id/button1"
-                style="@style/btnStyleBlue"
+            <TextView
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_above="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="24"
+                android:textColor="@color/rosso"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="2500"
+                android:textColor="@color/rosso"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/textView5"
+                android:text="Kcal"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="Prosegui"
-                android:textColor="#FFFFFF"
-                android:textStyle="italic" />
-        
-    </RelativeLayout>
+                android:layout_marginTop="26dp"
+                android:src="@drawable/salute" />
 
-    
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Il tuo fammisogno energetico:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold" />
 
-</LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </ScrollView>
