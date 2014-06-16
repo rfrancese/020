@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Personal Trainer</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="app_name">PersonalTrainer</string>
+    <string name="title_section1">Esercizi</string>
+    <string name="title_section2">Diario</string>
+    <string name="title_section3">Alimentazione</string>
+    <string name="title_section4">Allenamento</string>
+    <string name="title_section5">Impostazioni</string>
+    <string name="title1">Dieta consigliata</string>
+    <string name="title2">Dieta per aumento massa muscolare</string>
+    <string name="title3">Dieta per dimagrimento</string>
+    <string name="title4">Dieta per rassodamento</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_meet_fragment">MeetFragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_chat_fragment">ChatFragment</string>
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="Titolo">PERSONAL TRAINER</string>
     <string name="nome_utente">Nome Utente</string>
@@ -25,6 +39,8 @@
 
     <color name="blue">#33b5e5</color>
     <color name="rosso">#FF0000</color>
+    <color name="cel">#ade1f4</color>
+    <color name="white">#FFFFFF</color>
 
     <string name="title_activity_progress">ProgressiActivity</string>
 
@@ -49,7 +65,8 @@
     <string name="register">Inserisci i tuoi dati personali</string>
     <string name="prosegui">Prosegui</string>
     <string name="tab1">Esecuzione</string>
-    <string  name="tab2">Descrizione</string>
+    <string name="tab2">Descrizione</string>
+
     <color name="black">#000000</color>
 
     <string-array name="seleziona">
@@ -73,7 +90,6 @@
     <string name="invia">Invia</string>
     <string name="annulla">&lt;annulla</string>
     <string name="title_activity_problem">ProblemActivity</string>
-    <string name="hello_world">Hello world!</string>
     <string name="giorno">Seleziona un giorno per visualizzare gli esercizi svolti</string>
     <string name="allen">Sei pronto per il tuo primo allenamento? Seleziona un obiettivo</string>
 
@@ -87,12 +103,26 @@
     <string name="title_activity_lat_machine">Lat_machineActivity</string>
     <string name="title_activity_video">VideoActivity</string>
     <string name="title_activity_dietooo">DietoooActivity</string>
-    <string name="title_section1">Descrizione</string>
-    <string name="title_section2">Esecuzione</string>
     <string name="title_activity_lat_machine2">Lat_machine2Activity</string>
     <string name="title_activity_men">MenActivity</string>
     <string name="title_activity_description_fragment">DescriptionFragment</string>
     <string name="title_activity_video_fragment">VideoFragment</string>
     <string name="title_activity_video_lat">VideoLatActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_dieta">DietaActivity</string>
+    <string name="title_activity_allenamento_fragment">AllenamentoFragment</string>
+    <string name="title_activity_sub_menu3_fragment">SubMenu3Fragment</string>
+    <string name="title_activity_sun_menu3">SunMenu3Activity</string>
+    <string name="title_activity_details3_fragment">Details3Fragment</string>
+    <string name="title_activity_video3_fragment">Video3Fragment</string>
+    <string name="title_activity_custom">CustomActivity</string>
+    <string name="title_activity_diete">DieteActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_reg1_fragment">Reg1Fragment</string>
+    <string name="title_activity_reg2_fragment">Reg2Fragment</string>
+    <string name="title_activity_reg3_fragment">Reg3Fragment</string>
+    <string name="title_activity_dieta_aumento_m">DietaAumentoM</string>
 
 </resources>

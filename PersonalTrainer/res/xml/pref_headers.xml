@@ -3,13 +3,13 @@
     <!-- These settings headers are only used on tablets. -->
 
     <header
-        android:fragment="it.unisa.personaltrainer.Settings2Activity$GeneralPreferenceFragment"
+        android:fragment="com.example.prova.SettingsActivity$GeneralPreferenceFragment"
         android:title="@string/pref_header_general" />
     <header
-        android:fragment="it.unisa.personaltrainer.Settings2Activity$NotificationPreferenceFragment"
+        android:fragment="com.example.prova.SettingsActivity$NotificationPreferenceFragment"
         android:title="@string/pref_header_notifications" />
     <header
-        android:fragment="it.unisa.personaltrainer.Settings2Activity$DataSyncPreferenceFragment"
+        android:fragment="com.example.prova.SettingsActivity$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data_sync" />
 
 </preference-headers>

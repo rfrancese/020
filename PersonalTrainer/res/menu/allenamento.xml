@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="it.unisa.personaltrainer.AllenamentoActivity" >
+    tools:context="com.example.prova.AllenamentoActivity" >
 
     <item
         android:id="@+id/action_settings"

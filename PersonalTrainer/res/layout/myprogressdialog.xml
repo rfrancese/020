@@ -4,6 +4,7 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="#FFFFFF"
               android:padding="10dp"
               >
      
@@ -11,7 +12,7 @@
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/blue"
+        android:textColor="@color/black"
         android:textStyle="bold" 
     />
         
@@ -19,7 +20,7 @@
         android:id="@+id/cur_pg_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/blue"
+        android:textColor="@color/black"
         android:layout_marginTop="5dp"
         android:textStyle="bold|italic"    />       
     <ProgressBar  

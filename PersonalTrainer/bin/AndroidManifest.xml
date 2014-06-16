@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="it.unisa.personaltrainer"
+    package="it.unisa.personalTrainer"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -18,12 +19,108 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="it.unisa.personaltrainer.RegistrationActivity"
-            android:label="@string/title_activity_registration"
+            android:name="it.unisa.personalTrainer.Menu2Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.DiaryFragment"
+            android:label="@string/title_activity_meet_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.ExcercisesFragment"
+            android:label="@string/title_activity_chat_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.SettingsFragment"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="dieta.DietaFragment"
+            android:label="@string/title_activity_dieta" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.AllenamentoFragment"
+            android:label="@string/title_activity_allenamento_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.GambeActivity"
+            android:label="@string/title_activity_gambe"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.MainActivity"
+            android:name="it.unisa.personalTrainer.AbdominalActivity"
+            android:label="@string/title_activity_abdominal"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.PectoralActivity"
+            android:label="@string/title_activity_pectoral"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.DeltoidiActivity"
+            android:label="@string/title_activity_deltoidi"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.BicipitiActivity"
+            android:label="@string/title_activity_bicipiti"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.TricepsActivity"
+            android:label="@string/title_activity_triceps"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.DorsaliActivity"
+            android:label="@string/title_activity_dorsali"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.SubMenu3Fragment"
+            android:label="@string/title_activity_sub_menu3_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:theme="@style/CustomTheme" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.Details3Fragment"
+            android:label="@string/title_activity_details3_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.Video3Fragment"
+            android:label="@string/title_activity_video3_fragment" >
+        </activity>
+        
+        <activity
+            android:name="it.unisa.personalTrainer.CalendarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.DiaryFragment1"
+            android:label="@string/title_activity_meet_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.RegistrationActivity"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.Reg1Fragment"
+            android:label="@string/title_activity_reg1_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.Reg2Fragment"
+            android:label="@string/title_activity_reg2_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.Reg3Fragment"
+            android:label="@string/title_activity_reg3_fragment" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.MainActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
@@ -33,102 +130,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.MenuActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:name="dieta.DietaAumentoM"
+            android:label="@string/title_activity_dieta_aumento_m" >
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.DietActivity"
-            android:label="@string/title_activity_progress" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.SettingsActivity"
-            android:label="@string/title_activity_setting" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.DiaryActivity"
-            android:label="@string/title_activity_diary" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.ExcercisesActivity"
-            android:label="@string/title_activity_excercises" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.DetailsActivity"
-            android:label="@string/title_activity_details" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.AllenamentoActivity"
+            android:name="it.unisa.personalTrainer.AllenamentoActivity"
             android:label="@string/title_activity_allenamento" >
         </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.ProblemActivity"
-            android:label="@string/title_activity_problem"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+         <activity
+            android:name="dieta.DietaDim"
+            android:label="@string/title_activity_dieta_aumento_m" >
+        </activity>
+         <activity
+            android:name="dieta.DietaRass"
+            android:label="@string/title_activity_dieta_aumento_m">  
+            </activity>
+            <activity
+            android:name="dieta.DieteActivity"
+            android:label="@string/title_activity_dieta_aumento_m" >
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.GambeActivity"
-            android:label="@string/title_activity_gambe"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:name="dieta.DieteConsRassActivity"
+            android:label="@string/title_activity_dieta_aumento_m" >
         </activity>
         <activity
-            android:name="it.unisa.personaltrainer.AbdominalActivity"
-            android:label="@string/title_activity_abdominal"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.PectoralActivity"
-            android:label="@string/title_activity_pectoral"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.DeltoidiActivity"
-            android:label="@string/title_activity_deltoidi"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.BicipitiActivity"
-            android:label="@string/title_activity_bicipiti"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.TricepsActivity"
-            android:label="@string/title_activity_triceps"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="dorsali.DorsaliActivity"
-            android:label="@string/title_activity_dorsali"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.DietaRActivity"
-            android:label="@string/title_activity_dieta_r"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="dorsali.Lat_machineActivity"
-            android:label="@string/title_activity_lat_machine"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="it.unisa.personaltrainer.VideoActivity"
-            android:label="@string/title_activity_video" 
-            android:theme="@android:style/Theme.Black.NoTitleBar">
-        </activity>
-        <activity
-            android:name="dorsali.Pulley_bassoActivity"
-            android:label="@string/title_activity_lat_machine"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="dorsali.VideoLatActivity"
-            android:label="@string/title_activity_video_lat" >
-        </activity>
-        <activity
-            android:name="dorsali.SubMenuActivity"
-            android:label="@string/title_activity_video_lat" 
-            android:theme="@android:style/Theme.Black.NoTitleBar">
+            android:name="dieta.DieteConsDimActivity"
+            android:label="@string/title_activity_dieta_aumento_m" >
         </activity>
     </application>
 
