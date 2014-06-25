@@ -8,7 +8,8 @@
     <string name="title_section2">Diario</string>
     <string name="title_section3">Alimentazione</string>
     <string name="title_section4">Allenamento</string>
-    <string name="title_section5">Impostazioni</string>
+    <string name="title_section5">Scheda</string>
+    <string name="title_section6">Impostazioni</string>
     <string name="title1">Dieta consigliata</string>
     <string name="title2">Dieta per aumento massa muscolare</string>
     <string name="title3">Dieta per dimagrimento</string>
@@ -45,6 +46,7 @@
     <string name="title_activity_progress">ProgressiActivity</string>
 
     <color name="grigio">#F5F5F5</color>
+    <color name="green">#F5F5F5</color>
 
     <string name="riep">Riepilogo Situazione Attuale</string>
     <string name="grassa">Percentuale massa grassa:</string>
@@ -78,6 +80,14 @@
         <item>Italiano</item>
         <item>English</item>
     </string-array>
+    <string-array name="settimana">
+        <item>n°1</item>
+        <item>n°2</item>
+        <item>n°3</item>
+        <item>n°4</item>
+        <item>n°5</item>
+        <item>n°6</item>
+    </string-array>
 
     <string name="generali">Generali</string>
     <string name="aiuto">Aiuto</string>
@@ -97,7 +107,7 @@
 
     <string name="title_activity_deltoidi">DeltoidiActivity</string>
     <string name="title_activity_gambe">GambeActivity</string>
-    <string name="title_activity_abdominal">AbdominalActivity</string>
+    <string name="title_activity_abdominal">Scegli un esercizio</string>
     <string name="title_activity_dorsali">DorsaliActivity</string>
     <string name="title_activity_dieta_r">DietaRActivity</string>
     <string name="title_activity_lat_machine">Lat_machineActivity</string>
@@ -123,6 +133,9 @@
     <string name="title_activity_reg1_fragment">Reg1Fragment</string>
     <string name="title_activity_reg2_fragment">Reg2Fragment</string>
     <string name="title_activity_reg3_fragment">Reg3Fragment</string>
-    <string name="title_activity_dieta_aumento_m">DietaAumentoM</string>
+    <string name="title_activity_dieta_aumento_m">Consigli alimentari</string>
+    <string name="title_activity_dddddddd">DdddddddActivity</string>
+    <string name="title_activity_scheda_fragment">Aggiungi scheda</string>
+    <string name="title_activity_scheda">Scheda allenamento</string>
 
 </resources>

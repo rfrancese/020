@@ -31,7 +31,7 @@ public class AllenamentoFragment extends Fragment {
 		    		  };
 		    		   
 		    		  MusclesAdapter adapter = new MusclesAdapter(getActivity(),
-		    		  R.layout.list_item_2, data);
+		    		  R.layout.list_item3, data);
 		    		 
 		    		   
 		    		  ListView listView1 = (ListView)v.findViewById(R.id.listView1);

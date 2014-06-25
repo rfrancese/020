@@ -2,17 +2,27 @@ package it.unisa.personalTrainer;
 
 
 import it.unisa.personalTrainer.R;
-
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
+import android.graphics.Color;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
+import android.widget.Toast;
+import android.view.KeyEvent;
+import android.view.View.OnClickListener;
 
 
 public class SubMenu3Activity extends Activity {
@@ -31,15 +41,15 @@ public class SubMenu3Activity extends Activity {
 	 * The {@link ViewPager} that will host the section contents.
 	 */
 	ViewPager mViewPager;
+	protected ImageButton icon;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		
-		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 		setContentView(R.layout.activity_sun_menu3);
-		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_title_bar);
+		
+		
 		// Create the adapter that will return a fragment for each of the three
 		// primary sections of the activity.
 		mSectionsPagerAdapter = new MyPagerAdapter(getFragmentManager());
@@ -51,9 +61,10 @@ public class SubMenu3Activity extends Activity {
 		TitlePageIndicator indicator = (TitlePageIndicator)findViewById(R.id.indicator1);
 		indicator.setViewPager(mViewPager);
 		
+		
+		
 	}
 
-	
 
 	/**
 	 * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -105,17 +116,21 @@ public class SubMenu3Activity extends Activity {
 		protected void onRestart()
 		{
 		super.onRestart();
+		/* icon.setBackgroundColor(Color.TRANSPARENT);*/
 		}
+		
 		protected void onResume() {
 			super.onResume();
 		}
 		protected void onStop() {
 			super.onStop();
+			/* icon.setBackgroundColor(Color.TRANSPARENT);*/
 		}
 		
 
 	    protected void onPause(){
 	    	super.onPause();
+	    	/* icon.setBackgroundColor(Color.TRANSPARENT);*/
 
 	    }
 	    protected void onDestroy() {

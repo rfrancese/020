@@ -17,7 +17,7 @@ public class DeltoidiActivity extends Activity {
 	      
 	      Muscles data[] = new Muscles[]
 	    		  {
-	    		  new Muscles(R.drawable.t, "Alzate frontali alternate"),
+	    		  new Muscles(R.drawable.t, "Alzate frontali con manubri"),
 	    		  new Muscles(R.drawable.u, "Alzate laterali ai cavi"),
 	    		  new Muscles(R.drawable.v, "Alzate laterali "),
 	    		  new Muscles(R.drawable.x, "Alzate posteriori"),

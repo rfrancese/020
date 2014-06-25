@@ -23,12 +23,12 @@ public class DorsaliActivity extends Activity {
 	    		  {
 	    		  new Muscles(R.drawable.pp, "Lat Machine avanti impugnatura inversa"),
 	    		  new Muscles(R.drawable.qq, "Lat machine avanti"),
-	    		  new Muscles(R.drawable.rr, "Lat machine"),
+	    		  new Muscles(R.drawable.rr, "Lat machine dietro"),
 	    		  new Muscles(R.drawable.xx, "Lat machine con maniglia"),
-	    		  new Muscles(R.drawable.ss, "Rear deltoid row"),
-	    		  new Muscles(R.drawable.tt, "Reverse grip bent over rows"),
+	    		  new Muscles(R.drawable.ss, "Rematore con manubrio"),
+	    		  new Muscles(R.drawable.tt, "Rematore con bilanciere"),
 	    		  new Muscles(R.drawable.uu, "Pulley basso"),
-	    		  new Muscles(R.drawable.vv, "T-bar-row"),
+	    		  new Muscles(R.drawable.vv, "T-bar"),
 	    		  
 	    		  };
 	    		   
@@ -41,6 +41,7 @@ public class DorsaliActivity extends Activity {
 	    		 
 	    		   
 	    		  listView1.setAdapter(adapter);
+
 	    		  
 	    	 listView1.setOnItemClickListener(new OnItemClickListener() {
 	    		        public void onItemClick(AdapterView<?> parent, View view,

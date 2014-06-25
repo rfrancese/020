@@ -18,6 +18,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -54,10 +55,10 @@ public class DieteActivity extends Activity {
                         GravityCompat.START);
  
             // Add Drawer Item to dataList
-            dataList.add(new DrawerItem("Consigliata per te", R.drawable.consig));
-            dataList.add(new DrawerItem("Aumento massa muscolare", R.drawable.massa));
-            dataList.add(new DrawerItem("Dimagrimento", R.drawable.dimag));
-            dataList.add(new DrawerItem("Rassodamento", R.drawable.rassod));
+            dataList.add(new DrawerItem("\n\n\n Consigliata", R.drawable.consig_mini));
+            dataList.add(new DrawerItem(" Aumento\n massa\n muscolare", R.drawable.massa_mini));
+            dataList.add(new DrawerItem(" Dimagrimento ", R.drawable.dimag_mini));
+            dataList.add(new DrawerItem("Rassodamento", R.drawable.rasso_mini));
             
  
             adapter = new CustomDrawerAdapter(this, R.layout.custom_drawer_item,
@@ -65,6 +66,8 @@ public class DieteActivity extends Activity {
  
             mDrawerList.setAdapter(adapter);
  
+            mDrawerList.setBackgroundColor(Color.rgb(79, 79, 79));
+
             mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
  
             getActionBar().setDisplayHomeAsUpEnabled(true);

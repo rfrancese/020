@@ -2,13 +2,9 @@
 
     <item android:state_focused="true">
     <shape>
-        <solid android:color="#66FFFFFF" />
-    </shape>
-</item>
-    <item>
-    <shape>
         <solid android:color="@color/blue" />
     </shape>
 </item>
+   
 
 </selector>

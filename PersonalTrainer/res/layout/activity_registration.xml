@@ -14,7 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"/>
 
-     <it.unisa.personalTrainer.CirclePageIndicator
+     <registrazione.CirclePageIndicator
          android:id="@+id/indicator2"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"

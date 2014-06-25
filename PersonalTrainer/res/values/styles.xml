@@ -29,17 +29,16 @@
        <item name="android:background">@drawable/custom_btn_blue</item>
        <item name="android:padding">10dip</item>
    </style>
-  
-    
    
     
-    
+    <color name="green">#03C03C</color>
     <color name="navy">#6699FF</color>
     <color name="sky">#0099CC</color>
     <color name="gray">#808080</color>
     <color name="lightgray">#e7e7e7</color>
-      <color name="lightgray02">#bfbfbf</color>
-    <color name="green">#8FCC85</color>
+    <color name="lightgray02">#bfbfbf</color>
+     <color name="lightgreen">#90EE90</color>
+
 
     
     <color name="caldroid_white">#FFFFFF</color>

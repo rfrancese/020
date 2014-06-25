@@ -20,14 +20,11 @@ public class AbdominalActivity extends Activity {
 	      setContentView(R.layout.activity_exc);
 	      Muscles data[] = new Muscles[]
 	    		  {
-	    		  new Muscles(R.drawable.a, "Bent Knee Hip Raise"),
-	    		  new Muscles(R.drawable.b, "Cross Body Crunch"),
 	    		  new Muscles(R.drawable.c, "Crunches"),
-	    		  new Muscles(R.drawable.d, "Decline Crunch"),
+	    		  new Muscles(R.drawable.d, "Crunch su Panca declinata"),
 	    		  new Muscles(R.drawable.e, "Leg Raise"),
-	    		  new Muscles(R.drawable.f, "Seated Ab Crunch"),
-	    		  new Muscles(R.drawable.g, "Side Bend"),
-	    		  new Muscles(R.drawable.h, "Side Plank"),
+	    		  new Muscles(R.drawable.f, "Crunch ai cavi"),
+	    		  new Muscles(R.drawable.g, "Side Bend")
 		    		 
 	    		  };
 	    		   

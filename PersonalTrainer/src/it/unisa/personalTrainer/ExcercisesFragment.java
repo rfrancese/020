@@ -1,7 +1,12 @@
 package it.unisa.personalTrainer;
 
+import pettorali.PectoralActivity;
+import polpacci.PolpacciActivity;
+import quadricipiti.QuadricipitiActivity;
+import femorali.FemoralActivity;
+import glutei.GluteiActivity;
 import it.unisa.personalTrainer.R;
-
+import adduttori_abductori.AddAbducActivity;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +25,7 @@ private ListView list;
 public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     // Inflate the layout for this fragment
 	
-	View v=inflater.inflate(R.layout.fragment_meet, container, false);
+	View v=inflater.inflate(R.layout.fragment_excercises, container, false);
 	
 	 list = (ListView)v.findViewById(R.id.listView1);
 	    Muscles data[] = new Muscles[]
@@ -84,10 +89,28 @@ public void onViewCreated(View view, Bundle savedInstanceState) {
        	              Intent newActivity6 = new Intent(view.getContext(), DorsaliActivity.class);     
                      startActivity(newActivity6);
                      break;
-     	     /*case 6:  
-     	    	      Intent newActivity7 = new Intent(view.getContext(), GambeActivity.class);     
+     	     case 6:  
+     	    	      Intent newActivity7 = new Intent(view.getContext(), AddAbducActivity.class);     
      	              startActivity(newActivity7);
-     	              break;*/
+     	              break;
+     	       
+     	    case 7:  
+	    	      Intent newActivity8 = new Intent(view.getContext(), QuadricipitiActivity.class);     
+	              startActivity(newActivity8);
+	              break;
+     	     case 8:  
+	    	      Intent newActivity9 = new Intent(view.getContext(), GluteiActivity.class);     
+	              startActivity(newActivity9);
+	              break;
+     	    case 9:  
+	    	      Intent newActivity10 = new Intent(view.getContext(), FemoralActivity.class);     
+	              startActivity(newActivity10);
+	              break;
+	              
+     	    case 10:  
+	    	      Intent newActivity11 = new Intent(view.getContext(), PolpacciActivity.class);     
+	              startActivity(newActivity11);
+	              break;
      	    	
      		    	 
      	    }

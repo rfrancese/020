@@ -14,6 +14,7 @@ import android.app.Dialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.net.ConnectivityManager;
@@ -48,7 +49,7 @@ public class Video3Fragment extends Fragment{
 	ImageView image;
 	View v;
 	InputStream inputStream;
-
+	Thread t;
 	
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
@@ -101,6 +102,23 @@ public class Video3Fragment extends Fragment{
 		    image.setOnClickListener(new OnClickListener(){
 	 		    
 				public void onClick(View arg0) {
+					if(file.exists()){
+						 image.setVisibility(View.INVISIBLE);         
+	 						video.setVideoPath(file.getPath());
+	 						
+	 						video.setOnPreparedListener (new OnPreparedListener() {                    
+	 							@Override
+	 							public void onPrepared(MediaPlayer mp) {
+	 								
+	 							mp.setLooping(true);	
+	 								
+	 							}
+	 						});
+	 						
+	 						
+	 						video.start();
+					}
+					else{
 					
 					
 				if(!haveNetworkConnection()){
@@ -109,35 +127,59 @@ public class Video3Fragment extends Fragment{
 					
 					flag=false;
 					}
-					else
+					else{
 						flag=true;
-
+						visualizza();
+					}
 					if(flag){
 						showProgress(dwnload_file_path);
+						
 
-
-						new Thread(new Runnable() {
+					new Thread(new Runnable() {
 							public void run() {
-								
+							
 									downloadFile();
 								
-							}
+						}
 						}).start();
 
-					}					
+					}
+				}
 				}
 	        	
 	       });
 	} 		   
 }
 		
+		public void visualizza() {
+			String condizioni="Durante la visualizzazione del video la modalità standby sarà disattivata automaticamente.\n"
+					+ "Si prega di non attivarla al fine di evitare problemi di visualizzazione che sono stati "
+					+ "riscontrati  in alcuni smartphone. Al termine della visualizzazione del video sarà riattivata automaticamente. ";
 
+			AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),AlertDialog.THEME_HOLO_LIGHT);
+			builder.setTitle("Attenzione!!!")
+			.setIcon( R.drawable.ic_launcher )
+			.setMessage(condizioni)
+			
+			.setCancelable(false)
+			
+			.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				//Se ho inserito tutti i dati di registrazione scrivo su file nella scheda sd e lancio la prossima activity
+				
+			}
+			});
+			
+			AlertDialog alert = builder.create();
+			alert.show();
+			}
 		
 	void downloadFile() {
 
 			try {
 				per=0;
-				
+			
 				URL url = new URL(dwnload_file_path);
 				HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
@@ -183,20 +225,12 @@ public class Video3Fragment extends Fragment{
 				}
 				//close the output stream when complete //
 				fileOutput.close();
-				getActivity().runOnUiThread(new Runnable() {
-					public void run() {
-						dialog.dismiss(); 
-						 image.setVisibility(View.INVISIBLE); 
-						video.setVideoPath(file.getPath());
-						video.setOnPreparedListener (new OnPreparedListener() {                    
-							@Override
-							public void onPrepared(MediaPlayer mp) {
-								mp.setLooping(true);
-							}
-						});
-						video.start();
-					}
-				});         
+				dialog.dismiss();
+				android.os.Process.killProcess(android.os.Process.myUid());
+				getActivity().finish();
+				Intent activity=new Intent(getActivity(),SubMenu3Activity.class);
+				startActivity(activity);
+				
 
 			} catch (final MalformedURLException e) {
 				showError("Error : MalformedURLException " + e);        
@@ -293,4 +327,37 @@ public class Video3Fragment extends Fragment{
 			alert.show();
 	}
 		
+		 public void onStart()
+			{
+			super.onStart();
+			
+			}
+			
+			
+			public void onResume() {
+				super.onResume();
+				  video.start();
+				  
+			}
+			
+			
+			public void onStop() {
+				super.onStop();
+				video.pause();
+				
+				
+			}
+			
+
+		    public void onPause(){
+		    	super.onPause();
+		    	video.pause();
+		    	
+
+		    }
+		    public void onDestroy() {
+		    	super.onDestroy();
+		    
+		    	}
+		    
 }

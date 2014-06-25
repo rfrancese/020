@@ -3,8 +3,8 @@ package it.unisa.personalTrainer;
 
 import java.io.File;
 
+import registrazione.RegistrationActivity;
 import it.unisa.personalTrainer.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 
 				if(Environment.isExternalStorageRemovable()){
 					if(f.exists()){
-						Intent intent = new Intent(MainActivity.this,Menu2Activity.class);
+						Intent intent = new Intent(MainActivity.this,MenuActivity.class);
 						startActivity(intent);
 					}
 					else{
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
 				else{ 
 
 					if(fmem.exists()){
-						Intent intent = new Intent(MainActivity.this,Menu2Activity.class);
+						Intent intent = new Intent(MainActivity.this,MenuActivity.class);
 						startActivity(intent);
 					}
 					else{

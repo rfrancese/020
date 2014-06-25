@@ -19,10 +19,10 @@ public class SettingsFragment extends Fragment{
 
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			
+
 			View v= inflater.inflate(R.layout.fragment_settings,
 					container, false);
-			
+
 			final Spinner s = (Spinner) v.findViewById(R.id.spinner1);
 			  @SuppressWarnings("rawtypes")
 			ArrayAdapter adapter = ArrayAdapter.createFromResource(
@@ -30,23 +30,23 @@ public class SettingsFragment extends Fragment{
 			  adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 					s.setAdapter(adapter);	  
 					s.setPrompt("Seleziona");
-			
-					
-					
-			        
+
+
+
+
 			s.setOnItemSelectedListener(new OnItemSelectedListener() {
-			
+
 			public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				
+
 				/*String voceSelezionata = (String) s.getSelectedItem();*/
-			
+
 			}
-			
+
 			public void onNothingSelected(AdapterView<?> arg0) {
-					
+
 			}
 			});
-			
+
 			final TextView view = (TextView) v.findViewById(R.id.textView4);
 			view.setOnClickListener(new View.OnClickListener() {
 
@@ -56,11 +56,11 @@ public class SettingsFragment extends Fragment{
 			  }
 
 			});
-			
+
 			final TextView view2 = (TextView) v.findViewById(R.id.textView7);
 			view2.setOnClickListener(new View.OnClickListener() {
 
-			 
+
 			@Override
 			  public void onClick(View v) {
 				/*Intent intent = new Intent(SettingsFragment.class,ProblemActivity.class);
@@ -68,20 +68,19 @@ public class SettingsFragment extends Fragment{
 			 }
 
 			});
-			
+
 			final TextView view3 = (TextView) v.findViewById(R.id.textView5);
 			view3.setOnClickListener(new View.OnClickListener() {
 
 			  @Override
 			  public void onClick(View v) {
-				  
+
 			  }
 
 			});
-			
-			
-			
+
+
+
 			return v;
 		}
 	}
-

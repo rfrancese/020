@@ -37,7 +37,7 @@ View v;
 	text3.setText("Metà mattino:");
 
 	TextView text4 = (TextView) view.findViewById(R.id.textView4);
-	text4.setText("100 gr bresaola o fesa di tacchina+ 100 gr di pane");
+	text4.setText("100 gr bresaola o fesa di tacchino+ 100 gr di pane");
 
 	TextView text5 = (TextView) view.findViewById(R.id.textView5);
 	text5.setText("Pranzo gg(allenamento):");
@@ -76,12 +76,12 @@ View v;
 	text15.setText("Attenzione");
 	
 	TextView text16= (TextView) view.findViewById(R.id.textView16);
-	text16.setText("-Pesa sempre i cibi a crudo.-Usa il sale ma con moderazione.-Oltre all’olio d’oliva che "
-			+ "devi usare crudo , puoi utilizzare altri odori come: Basilico, prezzemolo, aglio , "
+	text16.setText("Pesa sempre i cibi a crudo. Usa il sale ma con moderazione. Oltre all’olio d’oliva che "
+			+ "devi usare crudo , puoi utilizzare altri odori come: basilico, prezzemolo, aglio , "
 			+ "cipolla, limone, aceto; come verdure puoi utilizzate tutto tranne: fagioli, lenticchie, "
 			+ "ceci,(che sono tutti legumi), e patate (che sono amidi).");
 	
 	TextView text17= (TextView) view.findViewById(R.id.textView17);
-	text17.setText("-Domenica fai un’alimentazione libera.");
+	text17.setText("Domenica fai un’alimentazione libera.");
 }
 }

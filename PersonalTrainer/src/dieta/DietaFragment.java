@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 
@@ -56,7 +57,7 @@ public class DietaFragment extends Fragment {
 	  		double BMI=peso/(h*h);
 	  		float value=0;
 	  		
-	  		/*if(BMI <= 15)
+	  		if(BMI <= 15)
 	  			value=(float)BMI*7-9;
 	  		
 	  		else if(BMI > 15 && BMI <=18.5)
@@ -71,17 +72,15 @@ public class DietaFragment extends Fragment {
 	  		else if(BMI > 25 && BMI <=30)
 	  			value=(float) BMI*9-6;
 	  		
-	  		/*else if (BMI > 30 && BMI <=40)
-	  			value=*/
-	  		/*else
-	  		  value=(float) BMI;
+	  		else if (BMI > 30 && BMI <=35)
+	  			value=(float) BMI*9-6;
+	  		else if(BMI > 35 && BMI <=40)
+	  			value=(float) BMI*10-30;
+	  		else
+	  			value=(float) BMI*10-15;
 	  					
-	  		/*float diciottoecinque=(float)23*6;
-	  		float venticinque=(float)23*9;
-	  		float trenta=(float)24*11;
-	  		float quaranta=(float)25*15;
-	  		float cinquanta=(float)25*19;
-	  		line.setX(value);*/
+	  		
+	  		line.setX(value);
 	  		
 			return v;
 		}

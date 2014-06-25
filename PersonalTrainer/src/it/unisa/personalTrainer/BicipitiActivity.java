@@ -18,10 +18,9 @@ public class BicipitiActivity extends Activity {
 	      Muscles data[] = new Muscles[]
 	    		  {
 	    		  new Muscles(R.drawable.aa, "Curl con manubri"),
-	    		  new Muscles(R.drawable.bb, "Biceps curl dumbell"),
 	    		  new Muscles(R.drawable.cc, "Curl con bilanciere su panca scott"),
 	    		  new Muscles(R.drawable.dd, "Curl con bilanciere"),
-	    		  new Muscles(R.drawable.ee, "Concentration curl"),
+	    		  new Muscles(R.drawable.ee, "Curl in concentrazione"),
 
 		    		 
 	    		  };

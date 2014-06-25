@@ -17,14 +17,12 @@ public class TricepsActivity extends Activity {
 	      setContentView(R.layout.activity_exc);
 	      Muscles data[] = new Muscles[]
 	    		  {
-	    		  new Muscles(R.drawable.hh, "Barbell incline triceps extension"),
-	    		  new Muscles(R.drawable.ii, "Bench dips"),
-	    		  new Muscles(R.drawable.jj, "Jm press"),
-	    		  new Muscles(R.drawable.kk, "Lying triceps press"),
-	    		  new Muscles(R.drawable.ll, "One arm triceps extension"),
-	    		  new Muscles(R.drawable.mm, "Standing one arm triceps extension"),
-	    		  new Muscles(R.drawable.nn, "Tricep dumbbell kickback"),
-	    		  new Muscles(R.drawable.oo, "triceps pushdown v-bar"),
+	    		  new Muscles(R.drawable.hh, "French Press"),
+	    		  new Muscles(R.drawable.ii, "Distensioni alle parallele"),
+	    		  new Muscles(R.drawable.jj, "Distensioni su Panca a presa stretta"),
+	    		  new Muscles(R.drawable.ll, "French Press con manubrio"),
+	    		  new Muscles(R.drawable.nn, " Kickback"),
+	    		  new Muscles(R.drawable.oo, "Pushdown"),
 		    		 
 	    		  };
 	    		   
