@@ -13,12 +13,11 @@ public class Utente implements Serializable{
 	public Utente(){
 		
 	}
-	public Utente(String età, String sesso, String peso, String altezza, String polso){
+	public Utente(String età, String sesso, String peso, String altezza){
 		this.età=età;
 		this.sesso=sesso;
 		this.peso=peso;
 		this.altezza=altezza;
-		this.polso=polso;
 
 	}
 	
@@ -54,15 +53,9 @@ public class Utente implements Serializable{
 		this.altezza=altezza;
 	}
     
-    public String getPolso(){
-		return polso;
-	}
-    
-    public void setPolso(String polso){
-		this.polso=polso;
-	}
+   
     
   
     
-private String età,sesso,peso,altezza,polso;
+private String età,sesso,peso,altezza;
 }

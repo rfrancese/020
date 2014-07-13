@@ -2,7 +2,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/parte2_d"
+    android:background="@drawable/parte3"
     android:orientation="vertical"
     android:paddingBottom="15dp"
     android:paddingLeft="15dp"
@@ -25,7 +25,7 @@
         android:id="@+id/listView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="150dp"
         android:background="#33FFFFFF"
         android:divider="#FFFFFF"
         android:dividerHeight="1dp"
@@ -41,6 +41,7 @@
         android:layout_alignRight="@+id/textView1"
         android:layout_alignTop="@+id/imageButton1"
         android:layout_marginRight="64dp"
+        android:background="@drawable/btn_default2"
         android:src="@drawable/meno" />
 
     <ImageButton
@@ -49,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
+        android:background="@drawable/btn_default"
         android:src="@drawable/piu" />
 
 </RelativeLayout>

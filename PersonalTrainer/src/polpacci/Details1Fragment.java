@@ -1,7 +1,6 @@
 package polpacci;
 
 import it.unisa.personalTrainer.R;
-
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,16 +11,16 @@ import android.widget.TextView;
 
 public class Details1Fragment extends Fragment {
 
-	
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View v = inflater.inflate(R.layout.fragment_details3,
-					container, false);
-			return v;
-		}
-		
-		public void onViewCreated(View view, Bundle savedInstanceState) {
-		    super.onViewCreated(view, savedInstanceState);
+
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View v = inflater.inflate(R.layout.fragment_details3,
+				container, false);
+		return v;
+	}
+
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
 		TextView text1 = (TextView) view.findViewById(R.id.textView1);
 		text1.setText("Nome Esercizio:");
 
@@ -32,13 +31,13 @@ public class Details1Fragment extends Fragment {
 		text3.setText("Sinonimi:");
 
 		TextView text4 = (TextView) view.findViewById(R.id.textView4);
-		text4.setText("L'esercizio Calf machine è noto anche come, Polpacci da seduto.");
+		text4.setText("L'esercizio Calf machine seduto è noto anche come, Polpacci da seduto.");
 
 		TextView text5 = (TextView) view.findViewById(R.id.textView5);
 		text5.setText("Tipo di Esercizio:");
 
 		TextView text6 = (TextView) view.findViewById(R.id.textView6);
-		text6.setText("Calf Machine seduto Multiarticolare/accessorio.");
+		text6.setText("Calf Machine seduto è un esercizio Multiarticolare/accessorio.");
 
 		TextView text7 = (TextView) view.findViewById(R.id.textView7);
 		text7.setText("Varianti: ");

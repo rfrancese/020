@@ -191,7 +191,7 @@ public class DieteActivity extends Activity {
   		int peso=Integer.parseInt(u.getPeso());
   		double h=Integer.parseInt(u.getAltezza())*0.01;
   		double BMI=peso/(h*h);
-  		
+
   		if(BMI<18)
           /* settare la dieta consigliata*/
          f=new DietaAumentoM();

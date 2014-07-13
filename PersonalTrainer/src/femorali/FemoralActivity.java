@@ -50,6 +50,13 @@ public class FemoralActivity extends Activity {
 	    					    case 1:  Intent newActivity2 = new Intent(FemoralActivity.this, SubMenu2Activity.class);     
 					                     startActivity(newActivity2);
 					                     break;
+	    					    case 2:  Intent newActivity3 = new Intent(FemoralActivity.this, SubMenu3Activity.class);     
+			                             startActivity(newActivity3);
+			                             break;
+	    					    
+	    					    case 3:  Intent newActivity4 = new Intent(FemoralActivity.this, SubMenu4Activity.class);     
+			                              startActivity(newActivity4);
+			                              break;
 	    					     
 	    					  
 	    					    }

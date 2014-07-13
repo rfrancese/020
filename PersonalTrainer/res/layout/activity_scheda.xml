@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="10dp"
         android:text="Scheda"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/white"
@@ -25,7 +25,7 @@
         android:layout_below="@+id/textView"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="65dp"
         android:background="@color/blue"
         android:measureWithLargestChild="false" >
 
@@ -36,7 +36,7 @@
 
            
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView88"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_margin="1dip"
@@ -64,7 +64,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView89"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_margin="1dip"
@@ -140,8 +140,8 @@
                  android:layout_margin="1dip"
                  android:layout_weight="0.3"
                  android:background="#FFFFFF"
-                 android:focusable="false"
                  android:gravity="center"
+                 android:inputType="number"
                  android:text=""
                  android:textAppearance="?android:attr/textAppearanceMedium"
                  android:textSize="20dp" />
@@ -196,6 +196,7 @@
                 android:layout_margin="1dip"
                 android:layout_weight="0.3"
                 android:background="#FFFFFF"
+                  android:inputType="number"
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
@@ -253,6 +254,7 @@
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
+                   android:inputType="number"
                 android:gravity="center" />
             
         </TableRow>
@@ -308,6 +310,7 @@
                 android:background="#FFFFFF"
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:inputType="number"
                  android:textSize="20dp"
                 android:gravity="center" />
             
@@ -364,6 +367,7 @@
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
+                   android:inputType="number"
                 android:gravity="center" />
             
         </TableRow>
@@ -415,6 +419,7 @@
                 android:layout_weight="0.3"
                 android:background="#FFFFFF"
                 android:text=""
+                  android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
                 android:gravity="center" />
@@ -472,6 +477,7 @@
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
+                   android:inputType="number"
                 android:gravity="center" />
             
         </TableRow>
@@ -526,6 +532,7 @@
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
+                   android:inputType="number"
                 android:gravity="center" />
             
         </TableRow>
@@ -580,6 +587,7 @@
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
+                   android:inputType="number"
                 android:gravity="center" />
             
         </TableRow>
@@ -633,11 +641,14 @@
                 android:layout_weight="0.3"
                 android:background="#FFFFFF"
                 android:text=""
+                  android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceMedium" 
                  android:textSize="20dp"
                 android:gravity="center" />
             
         </TableRow>
+        
+                
     </TableLayout>
 
     <TextView
@@ -653,9 +664,77 @@
         android:textColor="@color/white"
         android:textStyle="italic|bold" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/table"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/btn_default"
+        android:text="Salva"
+        android:textColor="#FFFFFF" />
 
-  
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_default3"
+        android:text="120&quot;"
+        android:textColor="@color/white" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_default3"
+        android:text="60&quot;"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/table"
+        android:layout_marginTop="10dp"
+        android:text="Riposo:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/button5"
+        android:background="@drawable/btn_default3"
+        android:text="90&quot;"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/table"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_default3"
+        android:text="30&quot;"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
 

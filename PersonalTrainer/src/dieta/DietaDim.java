@@ -38,32 +38,33 @@ import android.widget.TextView;
 			text3.setText("Metà mattino:");
 
 			TextView text4 = (TextView) view.findViewById(R.id.textView4);
-			text4.setText("60gr di fesa di tacchino / 80gr di tonno al naturale + 1 cucchiaino d’olio extravergine di oliva");
+			text4.setText("60gr di fesa di tacchino / 80gr di tonno al naturale +\n1 cucchiaino d’olio extravergine di oliva");
 
 			TextView text5 = (TextView) view.findViewById(R.id.textView5);
 			text5.setText("Pranzo:");
 
 			TextView text6 = (TextView) view.findViewById(R.id.textView6);
-			text6.setText("50gr di riso basmati + 150gr. pollo/tacchino/200gr "
-					+ "filetto /160 gr di tonno al naturale/ 100 gr di bresaola/100 gr di fesa di tacchino"
-					+ "/200 gr di pesce/ 200 gr di simmenthal+ verdura a volontà + 1 mela(1 cucchiaino d'olio d'oliva crudo)");
+			text6.setText("50gr di riso basmati +\n150gr. pollo/tacchino/150gr "
+					+ "filetto /80 gr di tonno al naturale/ 80 gr di bresaola/60 gr di fesa di tacchino"
+					+ "/100 gr di pesce/ 100 gr di simmenthal+\nverdura a volontà(1 cucchiaino d'olio d'oliva crudo)");
 
 			TextView text7 = (TextView) view.findViewById(R.id.textView7);
 			text7.setText("Cena: ");
 
 			TextView text8 = (TextView) view.findViewById(R.id.textView8);
-			text8.setText("150 gr filetto magro /250 gr simmenthal /160 gr di"
-					+ " tonno al naturale/ 100 gr di bresaola/100 gr di fesa di tacchino/200 gr di pesce/ 200 gr "
-					+ "di simmenthal+ verdura a volontà + 1 mela(1 cucchiaino d'olio d'oliva crudo)");
+			text8.setText("150 gr filetto magro /150 gr simmenthal /80 gr di"
+					+ " tonno al naturale/80 gr di bresaola/60 gr di fesa di tacchino/100 gr di pesce"
+					+ " +\nverdura a volontà(1 cucchiaino d'olio d'oliva crudo) +\n 150 di patate bollite");
 
 			TextView text9 = (TextView) view.findViewById(R.id.textView9);
 			text9.setText("Attenzione");
 
 			TextView text10= (TextView) view.findViewById(R.id.textView10);
-			text10.setText("Usa poco sale ma usalo. Pesa sempre i cibi a crudo. Non variare alimenti e quantitativi");
+			text10.setText("Usa poco sale ma usalo. Pesa sempre i cibi a crudo. Non variare alimenti e quantitativi"
+					+ "\n\n \\ = indica un'alternativa ");
 			
 			TextView text11= (TextView) view.findViewById(R.id.textView11);
-			text11.setText("Sabato sera e Domenica, tutto il giorno , fai alimentazione LIBERA.  ");
+			text11.setText("Sabato sera e Domenica, tutto il giorno , fai alimentazione LIBERA.\n ");
 			
 		
 	}

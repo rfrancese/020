@@ -49,7 +49,7 @@ public class Details2Fragment extends Fragment {
 		text9.setText("Esecuzione: ");
 
 		TextView text10= (TextView) view.findViewById(R.id.textView10);
-		text10.setText("La posizione di partenza vede l'atleta seduto su una panca inclinata i 20° e i 45°, con la schiena nella sua "
+		text10.setText("La posizione di partenza vede l'atleta seduto su una panca inclinata di 45°, con la schiena nella sua "
 				+ "posizione di forza le gambe divaricate ed i piedi saldamente appoggiati al terreno dietro le ginocchia per "
 				+ "favorire il mantenimento delle tre curve naturali della schiena e per reggere più efficacemente il peso. "
 				+ "I gomiti sono leggermente flessi, i polsi dritti o flessi e le spalle sono estese e parzialmente addotte in"

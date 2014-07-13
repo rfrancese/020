@@ -1,8 +1,12 @@
 package it.unisa.personalTrainer;
 
 
+import java.io.File;
+
+import dataBaseSqliteAllen.DbAdapter3;
 import diario.DiaryFragment;
 import dieta.DietaFragment;
+import impostazioni.SettingsFragment;
 import it.unisa.personalTrainer.R;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -10,29 +14,27 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MenuActivity extends ActionBarActivity implements
 		ActionBar.TabListener {
 
-	/**
-	 * The {@link android.support.v4.view.PagerAdapter} that will provide
-	 * fragments for each of the sections. We use a {@link FragmentPagerAdapter}
-	 * derivative, which will keep every loaded fragment in memory. If this
-	 * becomes too memory intensive, it may be best to switch to a
-	 * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-	 */
 	SectionsPagerAdapter mSectionsPagerAdapter;
-
-	/**
-	 * The {@link ViewPager} that will host the section contents.
-	 */
 	ViewPager mViewPager;
+	Fragment Fragment4;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +58,9 @@ public class MenuActivity extends ActionBarActivity implements
 		// Set up the ViewPager with the sections adapter.
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
-
+          
+		
+		
 		// When swiping between different sections, select the corresponding
 		// tab. We can also use ActionBar.Tab#select() to do this if we have
 		// a reference to the Tab.
@@ -156,22 +160,41 @@ public class MenuActivity extends ActionBarActivity implements
 			
 			case 1:// create the fragments
 	           
-	             Fragment Fragment2 = new DiaryFragment();
-	             return Fragment2;
-	             
-			 case 2:// create the fragments
-		           
-	             Fragment Fragment3 = new DietaFragment();
-	             return Fragment3;
-			 case 3:// create the fragments
-		           
-	             Fragment Fragment4 = new AllenamentoFragment();
+
+				 File dbtest =new File("/data/data/it.unisa.personalTrainer/databases/my.db");
+				
+				 File directory1=new File(Environment.getExternalStorageDirectory()+"/PersonalTrainer/");
+				   File f1= new File(directory1,"Scelta");
+				   
+				if(!f1.exists())
+					 Fragment4 = new AllenamentoFragment();
+				else{
+					if(dbtest.exists())
+					Fragment4 = new AllenamentoFragment2();
+					else
+						Fragment4 = new AllenamentoFragment3();
+				}
+				
+	            
 	             return Fragment4;
 			
-			case 4:// create the fragments
-		           
-	            Fragment Fragment5 = new SchedaFragment();
+	            
+	             
+			 case 2:// create the fragments
+				 
+				 Fragment Fragment5 = new SchedaFragment();
+		            
 	             return Fragment5;
+		           
+	            
+			 case 3:// create the fragments
+				 Fragment Fragment3 = new DietaFragment();
+	             return Fragment3;
+				
+			case 4:// create the fragments
+				
+				 Fragment Fragment2 = new DiaryFragment();
+	             return Fragment2;
 	         
 			case 5:// create the fragments
 		           
@@ -187,7 +210,6 @@ public class MenuActivity extends ActionBarActivity implements
 			// Show 3 total pages.
 			return 6;
 		}
-
 		
 	}
 
@@ -228,4 +250,58 @@ public class MenuActivity extends ActionBarActivity implements
 		}
 	}
 
+	@Override
+	public void onBackPressed() {
+	    visualizza();
+	}
+	
+	public void visualizza() {
+		String condizioni="Sei sicuro di voler uscire?";
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(MenuActivity.this);
+		builder.setTitle("Uscita")
+		.setIcon( R.drawable.ic_launcher )
+		.setMessage(condizioni)
+		
+		.setCancelable(false)
+		.setNegativeButton("No", new DialogInterface.OnClickListener() {
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+		
+		}
+		})
+		.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			
+			finish();
+		}
+		});
+		
+		AlertDialog alert = builder.create();
+		alert.show();
+		}
+
+	protected void onRestart()
+	{
+	super.onRestart();
+
+
+	}
+	protected void onResume() {
+		super.onResume();
+		
+	}
+	protected void onStop() {
+		super.onStop();
+	}
+	
+
+    protected void onPause(){
+    	super.onPause();
+    }
+    protected void onDestroy() {
+    	super.onDestroy();
+    	
+    	}
 }

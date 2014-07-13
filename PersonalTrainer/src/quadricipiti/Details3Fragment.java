@@ -25,7 +25,7 @@ public class Details3Fragment extends Fragment {
 		text1.setText("Nome Esercizio:");
 
 		TextView text2 = (TextView) view.findViewById(R.id.textView2);
-		text2.setText("Leg Extension");
+		text2.setText("Leg Extension.");
 
 		TextView text3 = (TextView) view.findViewById(R.id.textView3);
 		text3.setText("Sinonimi:");
@@ -37,7 +37,7 @@ public class Details3Fragment extends Fragment {
 		text5.setText("Tipo di Esercizio:");
 
 		TextView text6 = (TextView) view.findViewById(R.id.textView6);
-		text6.setText("Leg extension è un esercizio Monoarticolare.");
+		text6.setText("Leg Extension è un esercizio Monoarticolare.");
 
 		TextView text7 = (TextView) view.findViewById(R.id.textView7);
 		text7.setText("Varianti: ");

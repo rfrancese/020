@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="app_name">PersonalTrainer</string>
+    <string name="title_section1">Esercizi</string>
+    <string name="title_section2">Allenamento</string>
+    <string name="title_section3">Scheda</string>
+    <string name="title_section4">Alimentazione</string>
+    <string name="title_section5">Diario</string>
+    <string name="title_section6">Impostazioni</string>
+    <string name="title1">Dieta consigliata</string>
+    <string name="title2">Dieta per aumento massa muscolare</string>
+    <string name="title3">Dieta per dimagrimento</string>
+    <string name="title4">Dieta per rassodamento</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_meet_fragment">MeetFragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_chat_fragment">ChatFragment</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="Titolo">PERSONAL TRAINER</string>
+    <string name="nome_utente">Nome Utente</string>
+    <string name="sesso">Sesso</string>
+    <string name="femmina">F</string>
+    <string name="eta">Età</string>
+    <string name="polso">Circonferenza Polso (cm)</string>
+    <string name="maschio">M</string>
+    <string name="altezza">Altezza (cm)</string>
+    <string name="peso">Peso (Kg)</string>
+    <string name="avanti">Avanti</string>
+    <string name="prep">Preparazione Fisica</string>
+    <string name="title_activity_avvio">AvvioActivity</string>
+    <string name="title_activity_riepilogo">RiepilogoActivity</string>
+    <string name="title_activity_pectoral">PETTORALI: scegli un esercizio</string>
+    <string name="diet">Segui i nostri consigli alimentari</string>
+    <string name="scegli_gruppo">Seleziona un gruppo muscolare</string>
+    <string name="testo"> Scrivi il tuo problema qui..</string>
+    <string name="indietro">&lt;indietro</string>
+
+    <color name="blue">#33b5e5</color>
+    <color name="rosso">#FF0000</color>
+    <color name="cel">#ade1f4</color>
+    <color name="white">#FFFFFF</color>
+
+    <string name="title_activity_progress">ProgressiActivity</string>
+
+    <color name="grigio">#F5F5F5</color>
+
+
+    <string name="riep">Riepilogo Situazione Attuale</string>
+    <string name="grassa">Percentuale massa grassa:</string>
+    <string name="magra">Percentuale massa magra:</string>
+    <string name="fabbisogno">Fabbisogno energetico:</string>
+    <string name="data">Data ultimo allenamento:</string>
+    <string name="allenato">Ultimo gruppo muscolare allenato:</string>
+    <string name="daAllenare">Prossimo gruppo muscolare da allenare:</string>
+    <string name="reg">Registrazione Utente</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_diary">DiaryActivity</string>
+    <string name="title_activity_excercises">ExcercisesActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="dettagli">Dettagli Esercizio</string>
+    <string name="title_activity_allenamento">AllenamentoActivity</string>
+    <string name="title_activity_bicipiti">BICIPITI: scegli un esercizio</string>
+    <string name="title_activity_triceps">TRICIPITI: scegli un esercizio</string>
+    <string name="title_activity_quadri">QUADRICIPITI: scegli un esercizio</string>
+    <string name="title_activity_adut">ADUTTORI: scegli un esercizio</string>
+    <string name="title_activity_glutei">GLUTEI: scegli un esercizio</string>
+    <string name="register">Inserisci i tuoi dati personali</string>
+    <string name="prosegui">Prosegui</string>
+    <string name="tab1">Esecuzione</string>
+    <string name="tab2">Descrizione</string>
+
+    <color name="black">#000000</color>
+
+    <string-array name="seleziona">
+        <item>Principiante</item>
+        <item>Intermedio</item>
+        <item>Avanzato</item>
+    </string-array>
+    <string-array name="lingua">
+        <item>si</item>
+        <item>no</item>
+    </string-array>
+    <string-array name="settimana">
+        <item>n°1</item>
+        <item>n°2</item>
+        <item>n°3</item>
+        <item>n°4</item>
+        <item>n°5</item>
+        <item>n°6</item>
+    </string-array>
+
+    <string name="generali">Generali</string>
+    <string name="aiuto">Aiuto</string>
+    <string name="lingua">Lingua</string>
+    <string name="standby">No Standby in allenamento</string>
+    <string name="facebook">Seguici su Facebook</string>
+    <string name="versione">Versione Applicazione</string>
+    <string name="problema">Segnala un problema</string>
+    <string name="ripristino">Ripristino da Backup</string>
+    <string name="invia">Invia</string>
+    <string name="annulla">&lt;annulla</string>
+    <string name="title_activity_problem">Segnala un problema</string>
+    <string name="giorno">Seleziona un giorno per visualizzare gli esercizi svolti</string>
+    <string name="allen">Sei pronto per il tuo primo allenamento? Seleziona un obiettivo</string>
+
+    <color name="silver">#C0C0C0</color>
+
+    <string name="title_activity_deltoidi">DELTOIDI: scegli un esercizio</string>
+    <string name="title_activity_gambe">FEMORALI: scegli un esercizio</string>
+    <string name="title_activity_abdominal">ADDOMINALI: scegli un esercizio</string>
+    <string name="title_activity_polpacci">ADDOMINALI: scegli un esercizio</string>
+    <string name="title_activity_dorsali">DORSALI: scegli un esercizio</string>
+    <string name="title_activity_dieta_r">DietaRActivity</string>
+    <string name="title_activity_lat_machine">Lat_machineActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_dietooo">DietoooActivity</string>
+    <string name="title_activity_lat_machine2">Lat_machine2Activity</string>
+    <string name="title_activity_men">MenActivity</string>
+    <string name="title_activity_description_fragment">DescriptionFragment</string>
+    <string name="title_activity_video_fragment">VideoFragment</string>
+    <string name="title_activity_video_lat">VideoLatActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_dieta">DietaActivity</string>
+    <string name="title_activity_allenamento_fragment">AllenamentoFragment</string>
+    <string name="title_activity_sub_menu3_fragment">SubMenu3Fragment</string>
+    <string name="title_activity_sun_menu3">SunMenu3Activity</string>
+    <string name="title_activity_details3_fragment">Details3Fragment</string>
+    <string name="title_activity_video3_fragment">Video3Fragment</string>
+    <string name="title_activity_custom">CustomActivity</string>
+    <string name="title_activity_diete">DieteActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_reg1_fragment">Reg1Fragment</string>
+    <string name="title_activity_reg2_fragment">Reg2Fragment</string>
+    <string name="title_activity_reg3_fragment">Reg3Fragment</string>
+    <string name="title_activity_dieta_aumento_m">Consigli alimentari</string>
+    <string name="title_activity_dddddddd">DdddddddActivity</string>
+    <string name="title_activity_scheda_fragment">Aggiungi scheda</string>
+    <string name="title_activity_scheda">Scheda allenamento</string>
+    <string name="title_activity_modifica" >Modifica dati</string>         
+</resources>

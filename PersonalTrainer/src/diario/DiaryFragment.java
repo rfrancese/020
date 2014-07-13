@@ -145,7 +145,7 @@ import android.widget.Toast;
 	 		        int month = n.get(Calendar.MONTH);
 	 		        int year = n.get(Calendar.YEAR);*/
 	 				
-	 				String result=getExcercises(date);
+	 				
 	 				
 	 				if(Integer.parseInt(dayM)<10)
 	 					dayM=0+dayM;
@@ -154,12 +154,14 @@ import android.widget.Toast;
 	 					m=""+0+mese;
 	 				else
 	 					m=""+mese;
-	 				date=""+dayM+"/"+m+"/"+anno+"\n\n";
+	 				date=""+dayM+"/"+m+"/"+anno;
 
+	 				String result=getExcercises(date);
+	 				
 	 				if (result.equals(""))
-	 				     result="\n"+date+"Nessun esercizio svolto";
+	 				     result="\n"+date+"\n\n"+"Nessun esercizio svolto";
 	 				else
-	 					result="\n"+date+result;
+	 					result="\n"+date+"\n\n"+result;
 	 				/*AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 	 				builder.setTitle("Esercizi svolti")
 	 				.setIcon( R.drawable.ic_launcher )
@@ -229,9 +231,7 @@ import android.widget.Toast;
 
         
         cursor = dbHelper.fetchContactsByFilter(filter);
-       
-      
-        
+
 		 while ( cursor.moveToNext() ) {
 		                
 		    String excers = cursor.getString( cursor.getColumnIndex(DbAdapter.KEY_ESERCIZI));

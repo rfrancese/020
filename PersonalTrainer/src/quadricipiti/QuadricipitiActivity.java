@@ -29,8 +29,7 @@ public class QuadricipitiActivity extends Activity {
 	    		  new Muscles(R.drawable.jjj, "Affondi con manubri"),
 	    		  new Muscles(R.drawable.kkk, "Leg Extension"),
 	    		  new Muscles(R.drawable.lll, "Leg press"), 
-	    		  new Muscles(R.drawable.mmm, "Squat al Multipower"), 
-	    		  new Muscles(R.drawable.nnn, "Squat"),
+	    		  new Muscles(R.drawable.mmm, "Squat"), 
 	    		  };
 	    		   
 	    		  MusclesAdapter adapter = new MusclesAdapter(this,
@@ -48,9 +47,9 @@ public class QuadricipitiActivity extends Activity {
 	    		        	
 	    		        	  switch( position ) {
 
-	    					   /* case 0:  Intent newActivity1 = new Intent(FemoralActivity.this, SubMenu1Activity.class);     
+	    					    case 0:  Intent newActivity1 = new Intent(QuadricipitiActivity.this, SubMenu1Activity.class);     
 	    					              startActivity(newActivity1);
-	    					              break;*/
+	    					              break;
 	    		        	    case 1:  Intent newActivity2 = new Intent(QuadricipitiActivity.this, SubMenu2Activity.class);     
 	                                     startActivity(newActivity2);
 	                                     break;
@@ -63,7 +62,7 @@ public class QuadricipitiActivity extends Activity {
 	                                     startActivity(newActivity4);
 	                                     break;
 	                             
-	    					    case 5:  Intent newActivity6 = new Intent(QuadricipitiActivity.this, SubMenu6Activity.class);     
+	    					    case 4:  Intent newActivity6 = new Intent(QuadricipitiActivity.this, SubMenu6Activity.class);     
 					                     startActivity(newActivity6);
 					                     break;
 	    					     

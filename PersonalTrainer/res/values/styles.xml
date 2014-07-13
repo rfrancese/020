@@ -30,6 +30,10 @@
        <item name="android:padding">10dip</item>
    </style>
    
+  <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Medium">
+    <item name="android:textColor">#FFFFFF</item>
+</style>
+   
     
     <color name="green">#03C03C</color>
     <color name="navy">#6699FF</color>

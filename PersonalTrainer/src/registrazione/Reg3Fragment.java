@@ -4,12 +4,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
+import dieta.DieteActivity;
 import it.unisa.personalTrainer.MenuActivity;
 import it.unisa.personalTrainer.R;
 import it.unisa.personalTrainer.Utente;
-import it.unisa.personalTrainer.R.drawable;
-import it.unisa.personalTrainer.R.id;
-import it.unisa.personalTrainer.R.layout;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
@@ -28,7 +26,7 @@ import android.widget.Toast;
 public class Reg3Fragment  extends Fragment {
 final String FILENAME = "LogInPT";
 	
-	private EditText  età, peso,altezza,polso;
+	private EditText  età, peso,altezza;
 	private RadioButton radio1;
 	private String sesso="";
 
@@ -47,7 +45,6 @@ final String FILENAME = "LogInPT";
 			    età= (EditText) v.findViewById(R.id.editText1);
 			    peso= (EditText) v.findViewById(R.id.editText2);
 				altezza= (EditText) v.findViewById(R.id.editText3);
-				polso= (EditText) v.findViewById(R.id.editText4);
 				radio1=(RadioButton) v.findViewById(R.id.radio0);
 				
 				btn1.setOnClickListener(new OnClickListener() {
@@ -56,7 +53,7 @@ final String FILENAME = "LogInPT";
 					
 					
 					
-					if(radio1.isSelected())
+					if(radio1.isChecked())
 						sesso="Maschio";
 					else 
 		                 sesso="Femmina";
@@ -65,10 +62,9 @@ final String FILENAME = "LogInPT";
 			
 					// controllo che tutti i campi sono stati compilati
 					if(!(età.getText().toString().equals("")) && !(peso.getText().toString().equals("")) && 
-							!(altezza.getText().toString().equals("")) && !(polso.getText().toString().equals(""))){
+							!(altezza.getText().toString().equals(""))){
 						//Inserisco i dati ricavati nella classe Utente
-						user= new Utente(età.getText().toString(),sesso,peso.getText().toString(),altezza.getText().toString(),
-								polso.getText().toString());
+						user= new Utente(età.getText().toString(),sesso,peso.getText().toString(),altezza.getText().toString());
 						
 						
 						
@@ -78,8 +74,6 @@ final String FILENAME = "LogInPT";
 							Toast.makeText(getActivity().getApplicationContext(), "Peso consentito da 40 Kg a 150 Kg", Toast.LENGTH_SHORT).show();
 						else if(Integer.parseInt(altezza.getText().toString())<100 || Integer.parseInt(altezza.getText().toString())>250)
 							Toast.makeText(getActivity().getApplicationContext(), "Altezza consentita da 100 cm a 250 cm", Toast.LENGTH_SHORT).show();
-						else if(Integer.parseInt(polso.getText().toString())<10 || Integer.parseInt(polso.getText().toString())>25)
-							Toast.makeText(getActivity().getApplicationContext(), "Circonferenza polso consentita da 10 cm a 25 cm", Toast.LENGTH_SHORT).show();
 						else
 						visualizza2();
 					
@@ -90,6 +84,32 @@ final String FILENAME = "LogInPT";
 				}
 				});
 				
+				final EditText t= (EditText) v.findViewById(R.id.editText1);
+				t.setOnClickListener(new OnClickListener() {
+		 			@Override
+		 			public void onClick(View arg0) {
+		 				//vado alla prossima activity
+		 				t.setHint("");
+		 			}
+		 			});
+				
+				final EditText t2= (EditText) v.findViewById(R.id.editText2);
+				t2.setOnClickListener(new OnClickListener() {
+		 			@Override
+		 			public void onClick(View arg0) {
+		 				//vado alla prossima activity
+		 				t2.setHint("");
+		 			}
+		 			});
+				
+				final EditText t3= (EditText) v.findViewById(R.id.editText3);
+				t3.setOnClickListener(new OnClickListener() {
+		 			@Override
+		 			public void onClick(View arg0) {
+		 				//vado alla prossima activity
+		 				t3.setHint("");
+		 			}
+		 			});
 				
 		return v;
 	}
@@ -98,7 +118,7 @@ final String FILENAME = "LogInPT";
 	    
 	   
 public void visualizza2() {
-	String condizioni="Sei sicuro di aver inserito tutti i dati in modo veritiero?";
+	String condizioni="I dati inseriti sono corretti?";
 
 	AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 	builder.setTitle("Conferma i dati inseriti")
@@ -164,8 +184,10 @@ public boolean salvaFileSD() {
 
 public boolean salvaFileMem() {
 	try {
+		File directory=new File(getActivity().getFilesDir()+"/PersonalTrainer/");
+	    directory.mkdirs();
 	@SuppressWarnings("static-access")
-	FileOutputStream fos = getActivity().openFileOutput(getActivity().getFilesDir()+File.separator+FILENAME, getActivity().MODE_PRIVATE);
+	FileOutputStream fos = getActivity().openFileOutput(directory+FILENAME, getActivity().MODE_PRIVATE);
 	ObjectOutputStream osw = new ObjectOutputStream(fos);
 	osw.writeObject(user);
 	osw.close();

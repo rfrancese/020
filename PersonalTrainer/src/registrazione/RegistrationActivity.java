@@ -1,5 +1,7 @@
 package registrazione;
 
+import java.util.Locale;
+
 import it.unisa.personalTrainer.R;
 import it.unisa.personalTrainer.R.drawable;
 import it.unisa.personalTrainer.R.id;
@@ -7,6 +9,7 @@ import it.unisa.personalTrainer.R.layout;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
+import android.content.res.Configuration;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
@@ -132,9 +135,9 @@ public class RegistrationActivity  extends ActionBarActivity{
 	public void visualizza2() {
 	
 		String condizioni="Inserisci i dati richiesti durante la fase di registrazione in maniera piu' accurata possibile poichè "
-				+"tutti i nostri consigli dipenderanno da questi. I tuoi dati personali fornitici saranno utilizzati da parte di personal "
-				+ "trainer nel pieno rispetto dei principi fondamentali: dalla LGS. 196/2003 e dalla LGS. 675/1996 sulla normativa della "
-				+ "privacy. ";
+				+"tutti i nostri consigli dipenderanno da questi. I tuoi dati personali fornitici saranno salvati in locale "
+				+ "e non verranno utilizzati in alcun modo al di fuori  di personal "
+				+ "trainer. ";
 		
 		AlertDialog.Builder builder = new AlertDialog.Builder(this,AlertDialog.THEME_HOLO_LIGHT);
 		builder.setTitle("Attenzione!")

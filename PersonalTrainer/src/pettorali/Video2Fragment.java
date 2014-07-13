@@ -8,8 +8,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import dorsali.SubMenu3Activity;
 import it.unisa.personalTrainer.R;
-import it.unisa.personalTrainer.SubMenu3Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Fragment;
@@ -120,31 +120,9 @@ public class Video2Fragment extends Fragment{
 	 						video.start();
 					}
 					else{
-					
-					
-				if(!haveNetworkConnection()){
-	                 createNetErrorDialog();
-						
-					
-					flag=false;
-					}
-					else{
-						flag=true;
 						visualizza();
-					}
-					if(flag){
-						showProgress(dwnload_file_path);
-						
-
-					new Thread(new Runnable() {
-							public void run() {
-							
-									downloadFile();
-								
-						}
-						}).start();
-
-					}
+					
+				
 				}
 				}
 	        	
@@ -168,7 +146,29 @@ public class Video2Fragment extends Fragment{
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				//Se ho inserito tutti i dati di registrazione scrivo su file nella scheda sd e lancio la prossima activity
-				
+				if(!haveNetworkConnection()){
+	                 createNetErrorDialog();
+						
+					
+					flag=false;
+					}
+					else
+						flag=true;
+						
+					
+					if(flag){
+						showProgress(dwnload_file_path);
+						
+
+					new Thread(new Runnable() {
+							public void run() {
+							
+									downloadFile();
+								
+						}
+						}).start();
+
+					}
 			}
 			});
 			
@@ -270,8 +270,6 @@ public class Video2Fragment extends Fragment{
 			dialog.setTitle("Downloading video");
 			dialog.setCancelable(false);
 			dialog.setFeatureDrawableResource(Window.FEATURE_LEFT_ICON, R.drawable.ic_launcher);
-			TextView text = (TextView) dialog.findViewById(R.id.tv1);
-			text.setText("Downloading file from ... " + file_path);
 			cur_val = (TextView) dialog.findViewById(R.id.cur_pg_tv);
 			cur_val.setText("Starting download...");
 			dialog.show();

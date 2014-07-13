@@ -46,7 +46,7 @@ public class Reg2Fragment extends Fragment {
 					else
 						salvaFileMem();
 					
-				
+				salvaGiorno();
 				}
 				
 				public void onNothingSelected(AdapterView<?> arg0) {
@@ -79,10 +79,34 @@ public class Reg2Fragment extends Fragment {
 		return true;
 		}
 
+	public boolean salvaGiorno() {
+		try {
+	    //crea path di salvataggio
+		File directory=new File(Environment.getExternalStorageDirectory()+"/PersonalTrainer/");
+		File f = new File(directory,"Giorno");
+		// controlla esistenza directory
+
+		FileOutputStream output = new FileOutputStream(f);
+
+		//scrittura oggetto su file
+		PrintWriter fos = new PrintWriter(output);
+		fos.write("1");
+		fos.close();
+	    output.close();
+		} catch (Exception e) {
+		Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
+		return false;
+		}
+		return true;
+		}
+
+	
 	public boolean salvaFileMem() {
 		try {
 		@SuppressWarnings("static-access")
-		FileOutputStream output = getActivity().openFileOutput(getActivity().getFilesDir()+File.separator+"Levels", getActivity().MODE_PRIVATE);
+		File directory=new File(getActivity().getFilesDir()+"/PersonalTrainer/");
+	    directory.mkdirs();
+		FileOutputStream output = getActivity().openFileOutput(directory +"Levels", getActivity().MODE_PRIVATE);
 		PrintWriter fos2 = new PrintWriter(output);
 		fos2.write(s.getSelectedItem().toString());
 		output.close();

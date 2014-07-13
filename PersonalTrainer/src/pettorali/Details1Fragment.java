@@ -32,13 +32,13 @@ public class Details1Fragment extends Fragment {
 		text3.setText("Sinonimi:");
 
 		TextView text4 = (TextView) view.findViewById(R.id.textView4);
-		text4.setText("L'esercizio Croci su panca inclinata ai cavi è noto anche come Inclined bench cable crossover.");
+		text4.setText("L'esercizio Croci ai cavi è noto anche come Cable crossover.");
 
 		TextView text5 = (TextView) view.findViewById(R.id.textView5);
 		text5.setText("Tipo di Esercizio:");
 
 		TextView text6 = (TextView) view.findViewById(R.id.textView6);
-		text6.setText("Croci su panca inclinata ai cavi è un esercizio Monoarticolare/accessorio.");
+		text6.setText("Croci ai cavi è un esercizio Monoarticolare/accessorio.");
 
 		TextView text7 = (TextView) view.findViewById(R.id.textView7);
 		text7.setText("Varianti: ");
@@ -50,15 +50,15 @@ public class Details1Fragment extends Fragment {
 		text9.setText("Esecuzione: ");
 
 		TextView text10= (TextView) view.findViewById(R.id.textView10);
-		text10.setText("La posizione di partenza vede l'atleta seduto su una panca inclinata i 20° e i 45°, con la schiena nella "
-				+ "sua posizione di forza le gambe divaricate ed i piedi saldamente appoggiati al terreno dietro le ginocchia per "
-				+ "favorire il mantenimento delle tre curve naturali della schiena e per reggere più efficacemente il peso. I gomiti "
-				+ "sono leggermente flessi, i polsi dritti o flessi e le spalle sono estese e parzialmente addotte in proporzioni "
-				+ "differenti a seconda dell'inclinazione della panca. Le maniglie sono tenute alla stessa altezza dello sterno con "
-				+ "una presa neutra. L'esecuzione consiste nel flettere ed abdurre le spalle in modo che le maniglie traccino un arco"
-				+ " di cerchio sullo stesso piano verticale perpendicolare al pavimento (non alla panca) su cui si trovavano in "
-				+ "partenza. L'esecuzione termina quando le mani arrivano a sfiorarsi o si incrociano.Durante tutta l'esecuzione "
-				+ "dell'esercizio è consigliabile scaricare parte del peso sui piedi.\n");
+		text10.setText("Afferrate le impugnature a staffa delle due pulegge alte con un presa in pronazione "
+				+ "(palmi rivolti verso il basso) e le braccia leggermente più in alto delle spalle. "
+				+ "Piegatevi in avanti di circa 15 gradi, con la schiena nella sua naturale posizione inarcata. Nella posizione "
+				+ "iniziale, le braccia si trovano infuori ed ai lati, perpendicolari al corpo, coi gomiti leggermente piegati e "
+				+ "bloccati in questa angolazione. Inspirate e trattenete il respiro mentre iniziate a tirare le impugnature verso "
+				+ "il basso con le braccia relativamente dritte. Mentre vi avvicinate ai lati del tronco, portate le braccia "
+				+ "leggermente in avanti fino a toccare o incrociare appena. Dopo aver mantenuto per un attimo la posizione "
+				+ "inferiore, iniziate ad espirare e riportate le braccia alla posizione iniziale. Mantenete il corpo stabile "
+				+ "durante tutto l'esercizio.\n");
 	}
 }
 

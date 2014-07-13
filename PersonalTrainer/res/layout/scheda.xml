@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="130dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
         android:background="@drawable/selector_slim_spinner" />
     
     <TableLayout
@@ -22,7 +22,7 @@
         android:layout_below="@+id/textView"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="75dp"
         android:background="@color/blue"
         android:measureWithLargestChild="false" >
 
@@ -61,7 +61,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_margin="1dip"
@@ -667,6 +667,9 @@
                 android:gravity="center" />
             
         </TableRow>
+        
+        
+          
     </TableLayout>
 
     <Button
@@ -677,18 +680,15 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:text="Salva" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/table"
         android:layout_alignTop="@+id/spinner1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="Scheda "
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white"

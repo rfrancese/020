@@ -29,7 +29,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="175dp"
-        android:text="Scegli lingua"
+        android:text="Ti sei allenato negli ultimi 3 mesi?"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
@@ -38,11 +38,12 @@
     <Spinner
         android:id="@+id/spinner1"
         style="@style/Theme.AppCompat.Light"
-        android:layout_width="fill_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/selector_slim_spinner" />
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector_slim_spinner"
+        android:textAlignment="center" />
 
 </RelativeLayout>

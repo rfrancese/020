@@ -1,42 +1,22 @@
 package polpacci;
 
-
 import it.unisa.personalTrainer.R;
 import it.unisa.personalTrainer.TitlePageIndicator;
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Intent;
-import android.graphics.Color;
-import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.TextView.OnEditorActionListener;
-import android.widget.Toast;
-import android.view.KeyEvent;
-import android.view.View.OnClickListener;
 
 
 public class SubMenu1Activity extends Activity {
 
-	/**
-	 * The {@link android.support.v4.view.PagerAdapter} that will provide
-	 * fragments for each of the sections. We use a {@link FragmentPagerAdapter}
-	 * derivative, which will keep every loaded fragment in memory. If this
-	 * becomes too memory intensive, it may be best to switch to a
-	 * {@link android.support.v13.app.FragmentStatePagerAdapter}.
-	 */
 	MyPagerAdapter1 mSectionsPagerAdapter;
-	
+
 
 	/**
 	 * The {@link ViewPager} that will host the section contents.
@@ -47,10 +27,10 @@ public class SubMenu1Activity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		setContentView(R.layout.activity_sun_menu3);
-		
-		
+
+
 		// Create the adapter that will return a fragment for each of the three
 		// primary sections of the activity.
 		mSectionsPagerAdapter = new MyPagerAdapter1(getFragmentManager());
@@ -58,20 +38,14 @@ public class SubMenu1Activity extends Activity {
 		// Set up the ViewPager with the sections adapter.
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
-		
+
 		TitlePageIndicator indicator = (TitlePageIndicator)findViewById(R.id.indicator1);
 		indicator.setViewPager(mViewPager);
-		
-		
-		
+
+
+
 	}
 
-
-	/**
-	 * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-	 * one of the sections/tabs/pages.
-	 */
-	
 
 	/**
 	 * A placeholder fragment containing a simple view.
@@ -109,35 +83,32 @@ public class SubMenu1Activity extends Activity {
 			return rootView;
 		}
 	}
-	 protected void onStart()
-		{
+	protected void onStart()
+	{
 		super.onStart();
-		}
-		
-		protected void onRestart()
-		{
+	}
+
+	protected void onRestart()
+	{
 		super.onRestart();
-		/* icon.setBackgroundColor(Color.TRANSPARENT);*/
-		}
-		
-		protected void onResume() {
-			super.onResume();
-		}
-		protected void onStop() {
-			super.onStop();
-			/* icon.setBackgroundColor(Color.TRANSPARENT);*/
-		}
-		
+	}
 
-	    protected void onPause(){
-	    	super.onPause();
-	    	/* icon.setBackgroundColor(Color.TRANSPARENT);*/
+	protected void onResume() {
+		super.onResume();
+	}
+	protected void onStop() {
+		super.onStop();
+	}
 
-	    }
-	    protected void onDestroy() {
-	    	super.onDestroy();
-	    	
-	    	}
-	    
-	
+
+	protected void onPause(){
+		super.onPause();
+
+	}
+	protected void onDestroy() {
+		super.onDestroy();
+
+	}
+
+
 }

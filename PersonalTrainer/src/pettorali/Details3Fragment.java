@@ -31,13 +31,13 @@ public class Details3Fragment extends Fragment {
 		text3.setText("Sinonimi:");
 
 		TextView text4 = (TextView) view.findViewById(R.id.textView4);
-		text4.setText("L'esercizio Croci alla pectoral machine è noto anche come Pectoral machine.");
+		text4.setText("L'esercizio Croci alla macchina è noto anche come Croci Pectoral machine.");
 
 		TextView text5 = (TextView) view.findViewById(R.id.textView5);
 		text5.setText("Tipo di Esercizio:");
 
 		TextView text6 = (TextView) view.findViewById(R.id.textView6);
-		text6.setText("Croci alla pectoral machine è un esercizio Monoarticolare/accessorio.");
+		text6.setText("Croci alla macchina è un esercizio Monoarticolare/accessorio.");
 
 		TextView text7 = (TextView) view.findViewById(R.id.textView7);
 		text7.setText("Varianti: ");

@@ -1,12 +1,17 @@
 package it.unisa.personalTrainer;
 
+import bicipiti.BicipitiActivity;
+import deltoidi.DeltoidiActivity;
+import dorsali.DorsaliActivity;
 import pettorali.PectoralActivity;
 import polpacci.PolpacciActivity;
 import quadricipiti.QuadricipitiActivity;
+import tricipiti.TricepsActivity;
 import femorali.FemoralActivity;
 import glutei.GluteiActivity;
 import it.unisa.personalTrainer.R;
-import adduttori_abductori.AddAbducActivity;
+import addominali.AbdominalActivity;
+import aduttori.AddAbducActivity;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,7 +42,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sa
 	  		  new Muscles(R.drawable.bicipiti, "Bicipiti"),
 	  		  new Muscles(R.drawable.tricipiti, "Tricipiti"),
 	  		  new Muscles(R.drawable.dorsali, "Dorsali"),
-	  		  new Muscles(R.drawable.aduttori, "Aduttori e Abductori"),
+	  		  new Muscles(R.drawable.aduttori, "Aduttori"),
    		      new Muscles(R.drawable.quadricipite, "Quadricipiti"),
    		      new Muscles(R.drawable.glutei, "Glutei"),
    		      new Muscles(R.drawable.femorali, "Femorali"),

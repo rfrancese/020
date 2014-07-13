@@ -47,9 +47,14 @@ public class GluteiActivity extends Activity {
 	    					      case 0:  Intent newActivity1 = new Intent(GluteiActivity.this, SubMenu1Activity.class);     
 	    					              startActivity(newActivity1);
 	    					              break;
-	    					   /* case 1:  Intent newActivity2 = new Intent(FemoralActivity.this, SubMenu2Activity.class);     
+	    					      case 1:  Intent newActivity2 = new Intent(GluteiActivity.this, SubMenu2Activity.class);     
 					                     startActivity(newActivity2);
-					                     break;*/
+					                     break;
+					                     
+	    					      case 2:  Intent newActivity3 = new Intent(GluteiActivity.this, SubMenu3Activity.class);     
+				                     startActivity(newActivity3);
+				                     break;
+ 					     
 	    					     
 	    					  
 	    					    }

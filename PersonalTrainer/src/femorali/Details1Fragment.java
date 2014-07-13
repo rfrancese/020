@@ -26,7 +26,7 @@ public class Details1Fragment extends Fragment {
 		text1.setText("Nome Esercizio:");
 
 		TextView text2 = (TextView) view.findViewById(R.id.textView2);
-		text2.setText("Leg Curl in piedi");
+		text2.setText("Leg Curl in piedi.");
 
 		TextView text3 = (TextView) view.findViewById(R.id.textView3);
 		text3.setText("Sinonimi:");

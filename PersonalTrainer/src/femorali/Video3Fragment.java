@@ -1,4 +1,5 @@
 package femorali;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -8,7 +9,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import it.unisa.personalTrainer.R;
-import it.unisa.personalTrainer.SubMenu3Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Fragment;
@@ -41,7 +41,7 @@ public class Video3Fragment extends Fragment{
 	int downloadedSize = 0;
 	int totalSize = 0;
 	TextView cur_val;
-	String dwnload_file_path = "http://personaltrainer2014.altervista.org/video/femorali/leg_curl.mp4";
+	String dwnload_file_path = "http://personaltrainer2014.altervista.org/video/femorali/rumena.mp4";
 	float per=0;
 	VideoView video;
 	boolean flag=false;
@@ -60,7 +60,7 @@ public class Video3Fragment extends Fragment{
 			File SDCardRoot = Environment.getExternalStorageDirectory(); 
 			//create a new file, to save the downloaded file 
 			// recupero il percorso del file
-			file = new File(SDCardRoot+"/PersonalTrainer/","lat_machine.mp4");
+			file = new File(SDCardRoot+"/PersonalTrainer/","rumena.mp4");
 			video= (VideoView) v.findViewById(R.id.videoView1);
 
 			getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -120,30 +120,8 @@ public class Video3Fragment extends Fragment{
 					}
 					else{
 					
-					
-				if(!haveNetworkConnection()){
-	                 createNetErrorDialog();
-						
-					
-					flag=false;
-					}
-					else{
-						flag=true;
 						visualizza();
-					}
-					if(flag){
-						showProgress(dwnload_file_path);
-						
-
-					new Thread(new Runnable() {
-							public void run() {
-							
-									downloadFile();
-								
-						}
-						}).start();
-
-					}
+			
 				}
 				}
 	        	
@@ -168,6 +146,28 @@ public class Video3Fragment extends Fragment{
 			public void onClick(DialogInterface dialog, int which) {
 				//Se ho inserito tutti i dati di registrazione scrivo su file nella scheda sd e lancio la prossima activity
 				
+				if(!haveNetworkConnection()){
+	                 createNetErrorDialog();
+						
+					
+					flag=false;
+					}
+					else
+						flag=true;
+					
+					if(flag){
+						showProgress(dwnload_file_path);
+						
+
+					new Thread(new Runnable() {
+							public void run() {
+							
+									downloadFile();
+								
+						}
+						}).start();
+
+					}
 			}
 			});
 			
@@ -269,8 +269,6 @@ public class Video3Fragment extends Fragment{
 			dialog.setTitle("Downloading video");
 			dialog.setCancelable(false);
 			dialog.setFeatureDrawableResource(Window.FEATURE_LEFT_ICON, R.drawable.ic_launcher);
-			TextView text = (TextView) dialog.findViewById(R.id.tv1);
-			text.setText("Downloading file from ... " + file_path);
 			cur_val = (TextView) dialog.findViewById(R.id.cur_pg_tv);
 			cur_val.setText("Starting download...");
 			dialog.show();

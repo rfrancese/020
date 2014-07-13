@@ -43,29 +43,29 @@ View v;
 		text5.setText("Pranzo:");
 
 		TextView text6 = (TextView) view.findViewById(R.id.textView6);
-		text6.setText("80gr. pane + 150gr. pollo/tacchino/200gr filetto /160 "
-				+ "gr di tonno al naturale/ 100 gr di bresaola/100 gr di fesa di tacchino/200 "
-				+ "gr di pesce/ 200 gr di simmenthal+ verdura a volontà + 1 mela(1 cucchiaino d'olio d'oliva crudo)");
+		text6.setText("80gr. pane +\n150gr. pollo/tacchino/200gr filetto /160 "
+				+ "gr di tonno al naturale/ 100 gr di bresaola/100 gr di fesa di tacchino/150 "
+				+ "gr di pesce/ 150 gr di simmenthal+\n verdura a volontà(1 cucchiaino d'olio d'oliva crudo) +\n1 mela");
 
 		TextView text7 = (TextView) view.findViewById(R.id.textView7);
 		text7.setText("Spuntino: ");
 
 		TextView text8 = (TextView) view.findViewById(R.id.textView8);
-		text8.setText("2 fette biscottate + 160 gr tonno al naturale/200gr. Simmenthal/80 gr di bresaola + 1 mela");
+		text8.setText("2 fette biscottate +\n160 gr tonno al naturale/200gr. Simmenthal/80 gr di bresaola +\n 1 mela");
 
 		TextView text9 = (TextView) view.findViewById(R.id.textView9);
 		text9.setText("Cena:");
 
 		TextView text10= (TextView) view.findViewById(R.id.textView10);
-		text10.setText("50 gr pane + 150 gr filetto magro /250 gr simmenthal /160 gr di tonno al naturale/ "
-				+ "100 gr di bresaola/100 gr di fesa di tacchino/200 gr di pesce/ "
-				+ "200 gr di simmenthal+ verdura a volontà + 1 mela(1 cucchiaino d'olio d'oliva crudo)");
+		text10.setText("50 gr pane +\n150 gr filetto magro /200 gr simmenthal /160 gr di tonno al naturale/ "
+				+ "80 gr di bresaola/60 gr di fesa di tacchino/120 gr di pesce/ "
+				+ "100 gr di simmenthal+\n verdura a volontà(1 cucchiaino d'olio d'oliva crudo) +\n1 mela");
 		
 		TextView text11= (TextView) view.findViewById(R.id.textView11);
 		text11.setText("Attenzione:  ");
 		
 		TextView text12= (TextView) view.findViewById(R.id.textView12);
-		text12.setText("Usa poco sale ma usalo. Pesa sempre i cibi a crudo. Non variare alimenti e quantitativi");
+		text12.setText("Usa poco sale ma usalo. Pesa sempre i cibi a crudo. Non variare alimenti e quantitativi\n\n \\ = indica un'alternativa\n");
 		
 	
 }

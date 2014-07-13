@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -20,163 +21,425 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="it.unisa.personalTrainer.MenuActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="it.unisa.personalTrainer.ExcercisesFragment"
-            android:label="@string/title_activity_chat_fragment" >
+            android:label="@string/title_activity_chat_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.SettingsFragment"
-            android:label="@string/title_activity_settings" >
+            android:name="impostazioni.WebActivity"
+            android:label="@string/title_activity_chat_fragment"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="impostazioni.SettingsFragment"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="dieta.DietaFragment"
-            android:label="@string/title_activity_dieta" >
+            android:label="@string/title_activity_dieta"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="it.unisa.personalTrainer.AllenamentoFragment"
-            android:label="@string/title_activity_allenamento_fragment" >
-        </activity>
-       
-        <activity
-            android:name="it.unisa.personalTrainer.AbdominalActivity"
-            android:label="@string/title_activity_abdominal">
+            android:label="@string/title_activity_allenamento_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="adduttori_abductori.AddAbducActivity"
-            android:label="@string/title_activity_abdominal">
+            android:name="addominali.AbdominalActivity"
+            android:label="@string/title_activity_abdominal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="aduttori.AddAbducActivity"
+            android:label="@string/title_activity_adut"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="femorali.FemoralActivity"
-            android:label="@string/title_activity_abdominal">
+            android:label="@string/title_activity_gambe"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="pettorali.PectoralActivity"
-            android:label="@string/title_activity_abdominal">
+            android:label="@string/title_activity_pectoral"
+            android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name="polpacci.PolpacciActivity"
-            android:label="@string/title_activity_abdominal">
+            android:label="@string/title_activity_polpacci"
+            android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name="quadricipiti.QuadricipitiActivity"
-            android:label="@string/title_activity_abdominal">
+            android:label="@string/title_activity_quadri"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.DeltoidiActivity"
-            android:label="@string/title_activity_abdominal" >
+            android:name="deltoidi.DeltoidiActivity"
+            android:label="@string/title_activity_deltoidi"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.BicipitiActivity"
-            android:label="@string/title_activity_abdominal">
+            android:name="bicipiti.BicipitiActivity"
+            android:label="@string/title_activity_bicipiti"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.TricepsActivity"
-            android:label="@string/title_activity_abdominal">
+            android:name="tricipiti.TricepsActivity"
+            android:label="@string/title_activity_triceps"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.DorsaliActivity"
-            android:label="@string/title_activity_abdominal" >
+            android:name="dorsali.DorsaliActivity"
+            android:label="@string/title_activity_dorsali"
+            android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name="glutei.GluteiActivity"
-            android:label="@string/title_activity_abdominal" >
+            android:label="@string/title_activity_glutei"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.SubMenu3Activity"
+            android:name="dorsali.SubMenu3Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu2Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu4Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu5Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu6Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu7Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="dorsali.SubMenu8Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="pettorali.SubMenu1Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="pettorali.SubMenu2Activity"
             android:label="@string/title_activity_sun_menu3"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-          <activity
-            android:name="pettorali.SubMenu3Activity"
-            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
-            android:name="adduttori_abductori.SubMenu2Activity"
+            android:name="pettorali.SubMenu4Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu5Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu6Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu7Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu8Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu9Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu10Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu11Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pettorali.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="aduttori.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="quadricipiti.SubMenu6Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="quadricipiti.SubMenu3Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="quadricipiti.SubMenu4Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="quadricipiti.SubMenu2Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
+            android:name="quadricipiti.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
             android:name="polpacci.SubMenu1Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="polpacci.SubMenu2Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="glutei.SubMenu1Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="glutei.SubMenu2Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="glutei.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="femorali.SubMenu1Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="femorali.SubMenu2Activity"
             android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-        
+        <activity
+            android:name="femorali.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="femorali.SubMenu4Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
         <activity
             android:name="diario.DiaryFragment"
-            android:label="@string/title_activity_meet_fragment" >
+            android:label="@string/title_activity_meet_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="registrazione.RegistrationActivity"
-            android:label="@string/title_activity_registration" >
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="registrazione.Reg1Fragment"
-            android:label="@string/title_activity_reg2_fragment" >
+            android:label="@string/title_activity_reg2_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="registrazione.Reg2Fragment"
-            android:label="@string/title_activity_reg2_fragment" >
+            android:label="@string/title_activity_reg2_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="registrazione.Reg3Fragment"
-            android:label="@string/title_activity_reg2_fragment" >
+            android:label="@string/title_activity_reg2_fragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="addominali.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="addominali.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="addominali.SubMenu2Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="addominali.SubMenu4Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="addominali.SubMenu5Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="deltoidi.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="deltoidi.SubMenu2Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="deltoidi.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="deltoidi.SubMenu4Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="deltoidi.SubMenu5Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="deltoidi.SubMenu6Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tricipiti.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tricipiti.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tricipiti.SubMenu2Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tricipiti.SubMenu4Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tricipiti.SubMenu5Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tricipiti.SubMenu6Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
         <activity
             android:name="it.unisa.personalTrainer.MainActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -186,47 +449,105 @@
         </activity>
         <activity
             android:name="dieta.DietaAumentoM"
-            android:label="@string/title_activity_dieta_aumento_m" >
+            android:label="@string/title_activity_dieta_aumento_m"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.AllenamentoActivity"
-            android:label="@string/title_activity_allenamento" >
+            android:name="it.unisa.personalTrainer.AllenamentoFragment2"
+            android:label="@string/title_activity_allenamento"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="dieta.DietaDim"
-            android:label="@string/title_activity_dieta_aumento_m" >
+            android:label="@string/title_activity_dieta_aumento_m"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="dieta.DietaRass"
-            android:label="@string/title_activity_dieta_aumento_m" >
+            android:label="@string/title_activity_dieta_aumento_m"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="dieta.DieteActivity"
-            android:label="@string/title_activity_dieta_aumento_m" >
+            android:label="@string/title_activity_dieta_aumento_m"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="dieta.DieteConsRassActivity"
-            android:label="@string/title_activity_dieta_aumento_m" >
+            android:label="@string/title_activity_dieta_aumento_m"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="dieta.DieteConsDimActivity"
-            android:label="@string/title_activity_dieta_aumento_m" >
+            android:label="@string/title_activity_dieta_aumento_m"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="it.unisa.personalTrainer.ProblemActivity"
-            android:label="@string/title_activity_problem" >
+            android:name="impostazioni.ProblemActivity"
+            android:label="@string/title_activity_problem"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="it.unisa.personalTrainer.SchedaFragment"
-            android:label="@string/title_activity_scheda_fragment" >
+            android:label="@string/title_activity_scheda_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="it.unisa.personalTrainer.AddSchedaActivity"
-            android:label="@string/title_activity_scheda_fragment" >
+            android:label="@string/title_activity_scheda_fragment"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="it.unisa.personalTrainer.SchedaActivity"
-            android:label="@string/title_activity_scheda" >
+            android:label="@string/title_activity_scheda"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="impostazioni.ModificaActivity"
+            android:label="@string/title_activity_modifica"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="bicipiti.SubMenu1Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="bicipiti.SubMenu2Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="bicipiti.SubMenu3Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="bicipiti.SubMenu4Activity"
+            android:label="@string/title_activity_sun_menu3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.TimerActivity"
+            android:label="@string/title_activity_timer"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="it.unisa.personalTrainer.MenuActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="it.unisa.personalTrainer.AllenamentoFragment3"
+            android:label="@string/title_activity_scheda2_fragment"
+             android:screenOrientation="portrait"  >
+            
         </activity>
     </application>
 

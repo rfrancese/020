@@ -33,21 +33,7 @@ public class AddSchedaActivity extends Activity {
 				  adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
 				 
 						s.setAdapter(adapter);	  
-                     
-						s.setOnItemSelectedListener(new OnItemSelectedListener() {
-				
-				public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-					
-					/*String voceSelezionata = (String) s.getSelectedItem();*/
-				
-				}
-				
-				public void onNothingSelected(AdapterView<?> arg0) {
-						
-				}
-				});
 
-					
 						
 						Button b= (Button) findViewById(R.id.button1);
 						b.setOnClickListener(new OnClickListener() {
@@ -145,6 +131,8 @@ public class AddSchedaActivity extends Activity {
 					 		       if(!(t41.getText().toString().equals("")))
 					 		    	  dbHelper.createContact(day, t41.getText().toString(),t42.getText().toString(),
 					 		    			  t43.getText().toString(),t54.getText().toString());
+					 		       
+					 		      
 					 		       
 					 		         dbHelper.close();
 					 			

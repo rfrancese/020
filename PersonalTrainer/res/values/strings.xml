@@ -46,7 +46,6 @@
     <string name="title_activity_progress">ProgressiActivity</string>
 
     <color name="grigio">#F5F5F5</color>
-    <color name="green">#F5F5F5</color>
 
     <string name="riep">Riepilogo Situazione Attuale</string>
     <string name="grassa">Percentuale massa grassa:</string>
@@ -93,7 +92,7 @@
     <string name="aiuto">Aiuto</string>
     <string name="lingua">Lingua</string>
     <string name="standby">No Standby in allenamento</string>
-    <string name="facebook">Pagina Facebook</string>
+    <string name="facebook">Seguici su Facebook</string>
     <string name="versione">Versione Applicazione</string>
     <string name="problema">Segnala un problema</string>
     <string name="ripristino">Ripristino da Backup</string>
@@ -137,5 +136,8 @@
     <string name="title_activity_dddddddd">DdddddddActivity</string>
     <string name="title_activity_scheda_fragment">Aggiungi scheda</string>
     <string name="title_activity_scheda">Scheda allenamento</string>
+    <string name="title_activity_modifica">ModificaActivity</string>
+    <string name="title_activity_timer">TimerActivity</string>
+    <string name="title_activity_scheda2_fragment">Scarica scheda</string>
 
 </resources>

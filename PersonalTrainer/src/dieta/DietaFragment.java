@@ -55,29 +55,37 @@ public class DietaFragment extends Fragment {
 			int peso=Integer.parseInt(u.getPeso());
 	  		double h=Integer.parseInt(u.getAltezza())*0.01;
 	  		double BMI=peso/(h*h);
+	  		
 	  		float value=0;
 	  		
-	  		if(BMI <= 15)
-	  			value=(float)BMI*7-9;
+	  		if(BMI < 15)
+	  			value=(float)BMI*7-5;
 	  		
-	  		else if(BMI > 15 && BMI <=18.5)
+	  		else if(BMI >= 15 && BMI <18)
                    value=(float)BMI*8-9;
 	  		
-	  		else if(BMI > 18.5 && BMI <=21)
+	  		else if(BMI >=18 && BMI <21)
 	  			value=(float)BMI*8+6;
 	  		
-	  		else if(BMI > 21 && BMI <=25)
-	  			value=(float)BMI*8+7;
+	  		else if(BMI >= 21 && BMI <=25)
+	  			value=(float)BMI*9-2;
 	  		
-	  		else if(BMI > 25 && BMI <=30)
-	  			value=(float) BMI*9-6;
-	  		
-	  		else if (BMI > 30 && BMI <=35)
-	  			value=(float) BMI*9-6;
-	  		else if(BMI > 35 && BMI <=40)
-	  			value=(float) BMI*10-30;
-	  		else
+	  		else if(BMI > 25 && BMI <30)
 	  			value=(float) BMI*10-15;
+	  		
+	  		else if (BMI >= 30 && BMI <=32)
+	  			value=(float) BMI*10-10;
+	  		
+	  		else if (BMI > 32 && BMI <=35)
+	  			value=(float) BMI*10;
+	  		
+	  		else if(BMI > 35 && BMI <=40)
+	  			value=(float) BMI*10+10;
+	  		
+	  		else if(BMI > 40 && BMI <=50)
+	  			value=(float) BMI*10+20;
+	  		else
+	  			value=(float) 50*10+20;
 	  					
 	  		
 	  		line.setX(value);

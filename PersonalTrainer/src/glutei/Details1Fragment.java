@@ -26,25 +26,25 @@ public class Details1Fragment extends Fragment {
 		text1.setText("Nome Esercizio:");
 
 		TextView text2 = (TextView) view.findViewById(R.id.textView2);
-		text2.setText("Glutei Machine");
+		text2.setText("Glutei alla Glutei Machine.");
 
 		TextView text3 = (TextView) view.findViewById(R.id.textView3);
 		text3.setText("Sinonimi:");
 
 		TextView text4 = (TextView) view.findViewById(R.id.textView4);
-		text4.setText("La Gluteus Machine è nota anche come Glutei Machine.");
+		text4.setText("L' esercizio Glutei alla Glutei Machine è noto anche come Glutei Machine.");
 
 		TextView text5 = (TextView) view.findViewById(R.id.textView5);
 		text5.setText("Tipo di Esercizio:");
 
 		TextView text6 = (TextView) view.findViewById(R.id.textView6);
-		text6.setText("Glutei Machine è un esercizio Multiarticolare/accessorio.");
+		text6.setText("Glutei alla Glutei Machine è un esercizio Multiarticolare/accessorio.");
 
 		TextView text7 = (TextView) view.findViewById(R.id.textView7);
 		text7.setText("Varianti: ");
 
 		TextView text8 = (TextView) view.findViewById(R.id.textView8);
-		text8.setText(": Nessuna variante è disponibile.");
+		text8.setText("Non disponibile.");
 
 		TextView text9 = (TextView) view.findViewById(R.id.textView9);
 		text9.setText("Esecuzione: ");

@@ -37,40 +37,40 @@ View v;
 	text3.setText("Metà mattino:");
 
 	TextView text4 = (TextView) view.findViewById(R.id.textView4);
-	text4.setText("100 gr bresaola o fesa di tacchino+ 100 gr di pane");
+	text4.setText("100 gr bresaola/fesa di tacchino +\n100 gr di pane");
 
 	TextView text5 = (TextView) view.findViewById(R.id.textView5);
 	text5.setText("Pranzo gg(allenamento):");
 
 	TextView text6 = (TextView) view.findViewById(R.id.textView6);
-	text6.setText("100gr. riso/pasta + 200 gr pollo+ verdura"
+	text6.setText("150gr. riso/pasta +\n200 gr pollo +\nverdura"
                    +"(1 cucchiaio d’olio d’oliva crudo)");
 
 	TextView text7 = (TextView) view.findViewById(R.id.textView7);
 	text7.setText("Pranzo gg(riposo): ");
 
 	TextView text8 = (TextView) view.findViewById(R.id.textView8);
-	text8.setText("100gr. riso/pasta +  250gr. carne rossa magra + verdura"
+	text8.setText("100gr. riso/pasta +\n250gr. carne rossa magra +\nverdura"
             +"(1 cucchiaio d’olio d’oliva crudo)");
 
 	TextView text9 = (TextView) view.findViewById(R.id.textView9);
 	text9.setText("Spuntino gg (allenamento):");
 
 	TextView text10= (TextView) view.findViewById(R.id.textView10);
-	text10.setText("2 scatolette di tonno al naturale + 100gr di riso + 1 banana");
+	text10.setText("160gr. di tonno al naturale +\n10 gallette di riso +\n1 banana");
 	
 	TextView text11= (TextView) view.findViewById(R.id.textView11);
 	text11.setText("Spuntino gg (riposo):");
 	
 	TextView text12= (TextView) view.findViewById(R.id.textView12);
-	text12.setText("2 yogurt magri alla frutta + 50gr di riso");
+	text12.setText("2 yogurt magri alla frutta +\n5 gallette di riso");
 
 	
 	TextView text13= (TextView) view.findViewById(R.id.textView13);
 	text13.setText("Cena:");
 	
 	TextView text14= (TextView) view.findViewById(R.id.textView14);
-	text14.setText("250 gr. pesce/pollo verdura a volontà + 200gr di patate(1 cucchiaio d’olio d’oliva crudo)");
+	text14.setText("250 gr. merluzzo/petto di pollo +\nverdura a volontà +\n200gr di patate bollite(1 cucchiaio d’olio d’oliva crudo)");
 
 	TextView text15= (TextView) view.findViewById(R.id.textView15);
 	text15.setText("Attenzione");
@@ -79,7 +79,7 @@ View v;
 	text16.setText("Pesa sempre i cibi a crudo. Usa il sale ma con moderazione. Oltre all’olio d’oliva che "
 			+ "devi usare crudo , puoi utilizzare altri odori come: basilico, prezzemolo, aglio , "
 			+ "cipolla, limone, aceto; come verdure puoi utilizzate tutto tranne: fagioli, lenticchie, "
-			+ "ceci,(che sono tutti legumi), e patate (che sono amidi).");
+			+ "ceci,(che sono tutti legumi), e patate (che sono amidi). \n\n \\ = indica un'alternativa\n");
 	
 	TextView text17= (TextView) view.findViewById(R.id.textView17);
 	text17.setText("Domenica fai un’alimentazione libera.");

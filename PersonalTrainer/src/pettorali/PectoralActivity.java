@@ -63,8 +63,39 @@ public class PectoralActivity extends Activity {
 	    					    case 2:  Intent newActivity3 = new Intent(PectoralActivity.this, SubMenu3Activity.class);     
 					              startActivity(newActivity3);
 					              break;
+					              
+	    					    case 3:  Intent newActivity4 = new Intent(PectoralActivity.this, SubMenu4Activity.class);     
+					              startActivity(newActivity4);
+					              break;
 	    					   
-	    					     
+	    					    case 4:  Intent newActivity5 = new Intent(PectoralActivity.this, SubMenu5Activity.class);     
+					              startActivity(newActivity5);
+					              break;
+					              
+	    					    case 5:  Intent newActivity6 = new Intent(PectoralActivity.this, SubMenu6Activity.class);     
+					              startActivity(newActivity6);
+					              break;
+					              
+	    					    case 6:  Intent newActivity7 = new Intent(PectoralActivity.this, SubMenu7Activity.class);     
+					              startActivity(newActivity7);
+					              break;
+					              
+	    					    case 7:  Intent newActivity8 = new Intent(PectoralActivity.this, SubMenu8Activity.class);     
+					              startActivity(newActivity8);
+					              break;
+					              
+	    					    case 8:  Intent newActivity9 = new Intent(PectoralActivity.this, SubMenu9Activity.class);     
+					              startActivity(newActivity9);
+					              break;
+					              
+	    					    case 9:  Intent newActivity10 = new Intent(PectoralActivity.this, SubMenu10Activity.class);     
+					              startActivity(newActivity10);
+					              break;
+					              
+	    					    case 10:  Intent newActivity11 = new Intent(PectoralActivity.this, SubMenu11Activity.class);     
+					              startActivity(newActivity11);
+					              break;
+					              
 	    					  
 	    					    }
 	    		        }

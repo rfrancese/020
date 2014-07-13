@@ -7,4 +7,5 @@
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:ellipsize="marquee"
     android:textSize="23sp"
+    android:gravity="center"
     android:textStyle="italic"/>
